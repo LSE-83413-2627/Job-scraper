@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jobs für Applied Social Data Science</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖍️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #EDF0F3;
+  --surface: #FFFFFF;
+  --ink: #17212B;
+  --muted: #586572;
+  --line: #D3DAE1;
+  --mark: #FFE14D;
+  --focus: #2457B8;
+  --t-werkstudent: #2457B8;
+  --t-praktikum: #0C7457;
+  --t-einstieg: #7038B5;
+  --t-phd: #A8253B;
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #11161C; --surface: #19212A; --ink: #E5EAEF; --muted: #97A3AF;
+    --line: #2B3540; --mark: rgba(255, 214, 51, .34); --focus: #8DB2FF;
+    --t-werkstudent: #8DB2FF; --t-praktikum: #5FD3A9; --t-einstieg: #C29BF5; --t-phd: #F28C9D;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #11161C; --surface: #19212A; --ink: #E5EAEF; --muted: #97A3AF;
+  --line: #2B3540; --mark: rgba(255, 214, 51, .34); --focus: #8DB2FF;
+  --t-werkstudent: #8DB2FF; --t-praktikum: #5FD3A9; --t-einstieg: #C29BF5; --t-phd: #F28C9D;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: inherit; }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem; line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 56rem; margin: 0 auto; padding: 0 1.25rem; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+
+/* Kopf */
+header.wrap { padding-top: 3.5rem; padding-bottom: 1.75rem; }
+h1 {
+  font-size: clamp(2.1rem, 6vw, 3.6rem); line-height: 1.02; letter-spacing: -.025em;
+  font-weight: 800; margin: 0 0 .9rem; max-width: 16ch;
+}
+.lead { color: var(--muted); margin: 0; font-size: 1.05rem; max-width: 60ch; }
+.lead strong { color: var(--ink); font-weight: 700; }
+.warn { margin: .9rem 0 0; font-size: .92rem; color: var(--t-phd); }
+
+/* Filter */
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--paper);
+}
+.searchbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: var(--paper); padding: .75rem 0;
+}
+.searchbar .wrap { display: flex; gap: .5rem; align-items: center; }
+.search {
+  flex: 1 1 auto; min-width: 0; font: inherit; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
+  padding: .55rem .8rem;
+}
+.btn {
+  font: inherit; font-size: .9rem; font-weight: 500; cursor: pointer; white-space: nowrap;
+  color: var(--ink); background: transparent; border: 1px solid var(--line);
+  border-radius: 8px; padding: .5rem .8rem;
+}
+.btn[hidden] { display: none; }
+.reset-mobil { display: none; }
+#toggle-filter { display: none; }
+.panel { padding: .25rem 0 1rem; border-bottom: 1px solid var(--line); }
+.group { display: grid; grid-template-columns: 7.5rem 1fr; gap: .5rem; align-items: start; padding: .3rem 0; }
+.group-label { font-size: .9rem; color: var(--muted); padding-top: .4rem; }
+.chips { display: flex; flex-wrap: wrap; gap: .4rem; }
+.chip {
+  font: inherit; font-size: .9rem; font-weight: 500; cursor: pointer;
+  color: var(--muted); background: transparent; border: 1px solid var(--line);
+  border-radius: 999px; padding: .35rem .8rem; display: inline-flex; gap: .4rem; align-items: center;
+}
+.chip .n { font-variant-numeric: tabular-nums; opacity: .75; }
+.chip:disabled { opacity: .4; cursor: default; }
+.chip[aria-pressed="true"] { color: var(--surface); background: var(--c, var(--ink)); border-color: var(--c, var(--ink)); }
+.chip[aria-pressed="true"] .n { opacity: .85; }
+.chip.t-werkstudent { --c: var(--t-werkstudent); }
+.chip.t-praktikum { --c: var(--t-praktikum); }
+.chip.t-einstieg { --c: var(--t-einstieg); }
+.chip.t-phd { --c: var(--t-phd); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .chip[aria-pressed="true"] { color: #11161C; }
+}
+:root[data-theme="dark"] .chip[aria-pressed="true"] { color: #11161C; }
+
+/* Liste */
+main.wrap { padding-top: 1.5rem; padding-bottom: 4rem; }
+section + section { margin-top: 2.25rem; }
+h2 { font-size: 1.05rem; font-weight: 700; margin: 0 0 .35rem; display: flex; gap: .5rem; align-items: baseline; }
+h2 .n { color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+ul.jobs { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+li.job {
+  display: grid; grid-template-columns: 1fr auto; gap: .2rem 1rem;
+  padding: .95rem 0; border-bottom: 1px solid var(--line);
+}
+.job-title { font-size: 1.08rem; font-weight: 600; line-height: 1.35; margin: 0; text-decoration: none; }
+.job-title:hover { text-decoration: underline; text-underline-offset: 3px; }
+.is-new .job-title span {
+  background: linear-gradient(180deg, transparent 50%, var(--mark) 50%, var(--mark) 92%, transparent 92%);
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  padding: 0 .15em; margin: 0 -.15em; border-radius: .2em;
+}
+.meta { grid-column: 1; color: var(--muted); font-size: .93rem; display: flex; flex-wrap: wrap; gap: .1rem .9rem; }
+.typ { font-weight: 600; }
+.typ.t-werkstudent { color: var(--t-werkstudent); }
+.typ.t-praktikum { color: var(--t-praktikum); }
+.typ.t-einstieg { color: var(--t-einstieg); }
+.typ.t-phd { color: var(--t-phd); }
+.side { grid-column: 2; grid-row: 1 / span 2; display: flex; flex-direction: column; align-items: flex-end; gap: .3rem; }
+.age { color: var(--muted); font-size: .85rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.star {
+  font: inherit; font-size: .85rem; cursor: pointer; color: var(--muted);
+  background: none; border: 1px solid var(--line); border-radius: 6px; padding: .15rem .55rem;
+}
+.star[aria-pressed="true"] { color: var(--ink); border-color: var(--ink); font-weight: 600; }
+
+.empty { padding: 3rem 0; color: var(--muted); max-width: 46ch; }
+.empty strong { color: var(--ink); display: block; font-size: 1.1rem; margin-bottom: .3rem; }
+footer.wrap { color: var(--muted); font-size: .85rem; padding-bottom: 3rem; }
+
+@media (max-width: 34rem) {
+  header.wrap { padding-top: 2.25rem; }
+  #toggle-filter { display: inline-block; }
+  #reset { display: none; }
+  .reset-mobil { display: block; margin-top: .6rem; }
+  .panel:not(.offen) { display: none; }
+  .group { grid-template-columns: 1fr; gap: .3rem; padding: .45rem 0; }
+  .group-label { padding-top: 0; }
+  li.job { grid-template-columns: 1fr; }
+  .side { grid-column: 1; grid-row: auto; flex-direction: row; align-items: center; justify-content: space-between; }
+}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>Jobs für Applied Social Data Science</h1>
+  <p class="lead" id="lead">Wird geladen …</p>
+  <p class="warn" id="warn" hidden></p>
+</header>
+
+<div class="searchbar">
+  <div class="wrap">
+    <input class="search" id="q" type="search" placeholder="Titel, Firma oder Ort suchen" aria-label="Stellen durchsuchen">
+    <button class="btn" id="toggle-filter" type="button" aria-expanded="false" aria-controls="panel">Filter</button>
+    <button class="btn" id="reset" type="button" hidden>Zurücksetzen</button>
+  </div>
+</div>
+<div class="wrap"><div class="panel" id="panel"></div></div>
+
+<main class="wrap" id="list" aria-live="polite"></main>
+<footer class="wrap" id="foot"></footer>
+
+<script>
+const DATEN = {"studiengang": "Applied Social Data Science", "aktualisiert": "2026-11-18T19:19+01:00", "heute": "2026-11-18", "quellen": {"Arbeitsagentur": "ok", "DAAD PhDGermany": "fehler"}, "jobs": [{"id": "ba:10001-1004031064-S", "titel": "Wissenschaftliche*r Mitarbeiter*in (w/m/div)", "arbeitgeber": "Deutsches Institut für Wirtschaftsforschung e.V.", "ort": "Berlin", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004031064-S", "quelle": "Arbeitsagentur", "typ": "phd", "remote": false, "land": "Deutschland", "regionen": ["Berlin"], "arbeitszeit": ["teilzeit"], "veroeffentlicht": "2026-11-18", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:13334-00005f6724e001-S", "titel": "Werkstudent:in Data & Analytics (m/w/d)", "arbeitgeber": "EDEKA IT Stiftung & Co. OHG", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13334-00005f6724e001-S", "quelle": "Arbeitsagentur", "typ": "werkstudent", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["teilzeit"], "veroeffentlicht": "2026-11-16", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:12465-1646596-1-S", "titel": "Werkstudent (w/m/d) Produktmanagement Wayside Signals", "arbeitgeber": "Siemens AG", "ort": "Berlin", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12465-1646596-1-S", "quelle": "Arbeitsagentur", "typ": "werkstudent", "remote": false, "land": "Deutschland", "regionen": ["Berlin"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-16", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:20536-feya4nhfug-S", "titel": "Wissenschaftliche*r Mitarbeiter*in für das Institut Verkehrspl...", "arbeitgeber": "Technische Universität Hamburg", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20536-feya4nhfug-S", "quelle": "Arbeitsagentur", "typ": "phd", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-16", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:19913-3094341794524400-S", "titel": "NTT DATA Deutschland SE: Werkstudent (w/m/x) im Bereich Organisation, Development & Culture", "arbeitgeber": "NTT DATA Deutschland SE", "ort": "Berlin", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/19913-3094341794524400-S", "quelle": "Arbeitsagentur", "typ": "werkstudent", "remote": true, "land": "Deutschland", "regionen": ["Berlin", "Hamburg"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-13", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:12288-4996082313-S", "titel": "Doktorand Predictive Analytics als Analyst / Consultant (w|m|d) | findic", "arbeitgeber": "findic", "ort": "Berlin", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996082313-S", "quelle": "Arbeitsagentur", "typ": "phd", "remote": false, "land": "Deutschland", "regionen": ["Berlin"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-12", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:12288-4996073275-S", "titel": "Doktorand Graph Intelligence & Agentic Graph RAG als Analyst / Consultant (w|m|d) | findic", "arbeitgeber": "findic", "ort": "Berlin", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996073275-S", "quelle": "Arbeitsagentur", "typ": "phd", "remote": false, "land": "Deutschland", "regionen": ["Berlin"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-12", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:10001-1003946281-S", "titel": "– Postdoc – Wissenschaftliche/-r Mitarbeiter/-in (m/w/d) in der Professur für Data Engineering", "arbeitgeber": "Helmut-Schmidt-Universität Universität der Bundeswehr Personaldezernat", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003946281-S", "quelle": "Arbeitsagentur", "typ": "phd", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-12", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:10001-1003948907-S", "titel": "Wissenschaftliche/-r Mitarbeiter/-in (m/w/d) in der Professur für Hybrid Intelligence", "arbeitgeber": "Helmut-Schmidt-Universität Universität der Bundeswehr Personaldezernat", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003948907-S", "quelle": "Arbeitsagentur", "typ": "phd", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-12", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:10001-1003999289-S", "titel": "1 Doktorand*in (m/w/d)", "arbeitgeber": "Deutsches Institut für Ernährungsforschung Stiftung des öffentl.Rechts", "ort": "Nuthetal (Brandenburg)", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003999289-S", "quelle": "Arbeitsagentur", "typ": "phd", "remote": false, "land": "Deutschland", "regionen": ["Berlin"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-11", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:12462-1649681-1-S", "titel": "Praktikant Projektmanagement bei BMW Motorrad (w/m/x)", "arbeitgeber": "BMW AG", "ort": "Berlin", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12462-1649681-1-S", "quelle": "Arbeitsagentur", "typ": "praktikum", "remote": false, "land": "Deutschland", "regionen": ["Berlin"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-11", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:13151-1648451-1-S", "titel": "Praktikant*in Unterstützung Betriebsingenieurinnen Achskomponenten und Vorderachse", "arbeitgeber": "Mercedes-Benz Group AG", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13151-1648451-1-S", "quelle": "Arbeitsagentur", "typ": "praktikum", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-11", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:10001-1003990884-S", "titel": "Studentische:r Mitarbeiter:in (m/w/d) - Bereich Transfer und Dialog", "arbeitgeber": "Weizenbaum-Institut e. V.", "ort": "Berlin", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003990884-S", "quelle": "Arbeitsagentur", "typ": "werkstudent", "remote": true, "land": "Deutschland", "regionen": ["Berlin"], "arbeitszeit": ["teilzeit"], "veroeffentlicht": "2026-11-10", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:13348-1651695-1-S", "titel": "Internship Operational Excellence & Business Intelligence (BI & AI)", "arbeitgeber": "Lufthansa Technik AG", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1651695-1-S", "quelle": "Arbeitsagentur", "typ": "praktikum", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-09", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:13348-1651694-1-S", "titel": "Praktikum im Bereich Operational Excellence & Business Intelligence (BI & AI)", "arbeitgeber": "Lufthansa Technik AG", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1651694-1-S", "quelle": "Arbeitsagentur", "typ": "praktikum", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-09", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:20279-k62365.1111-S", "titel": "Werkstudent*in mobiles Sensorsystem (m/w/d)", "arbeitgeber": "ENQT GmbH", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20279-k62365.1111-S", "quelle": "Arbeitsagentur", "typ": "werkstudent", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["teilzeit"], "veroeffentlicht": "2026-11-09", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:10001-1003976655-S", "titel": "Werkstudent:in / Praktikant:in (d/w/m) Digitalisierung - Arbeitsicherheit", "arbeitgeber": "Unilever D Holding GmbH", "ort": "Buxtehude (Niedersachsen)", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003976655-S", "quelle": "Arbeitsagentur", "typ": "werkstudent", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["teilzeit"], "veroeffentlicht": "2026-11-06", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:13348-1651478-1-S", "titel": "Praktikum im Bereich Product Engineering Power Generation", "arbeitgeber": "Lufthansa Technik AG", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1651478-1-S", "quelle": "Arbeitsagentur", "typ": "praktikum", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-06", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:13348-1651693-1-S", "titel": "Praktikum Operational Excellence & Business Intelligence", "arbeitgeber": "Lufthansa Technik AG", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1651693-1-S", "quelle": "Arbeitsagentur", "typ": "praktikum", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-06", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:20965-2371020-S", "titel": "Werkstudent*in Hydrologie (m/w/d)", "arbeitgeber": "Hamburg Port Authority AÖR", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20965-2371020-S", "quelle": "Arbeitsagentur", "typ": "werkstudent", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["teilzeit"], "veroeffentlicht": "2026-11-05", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:10001-1003964713-S", "titel": "Werkstudent (m/w/d) IT / Business Infrastructure – ERP, PIM, DMS & CLM", "arbeitgeber": "BIGFOOD Produktions GmbH", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003964713-S", "quelle": "Arbeitsagentur", "typ": "werkstudent", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["teilzeit"], "veroeffentlicht": "2026-11-04", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:13509-000021116b4001-S", "titel": "Praktikant Cognitive Science & Decision Intelligence (m/w/d)", "arbeitgeber": "BWI GmbH", "ort": "Berlin", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13509-000021116b4001-S", "quelle": "Arbeitsagentur", "typ": "praktikum", "remote": false, "land": "Deutschland", "regionen": ["Berlin"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-11-02", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:12513-0007660724-S", "titel": "Werkstudent Signalverarbeitung & Datenanalyse (m/w/d)", "arbeitgeber": "Korsch AG", "ort": "Berlin", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12513-0007660724-S", "quelle": "Arbeitsagentur", "typ": "werkstudent", "remote": false, "land": "Deutschland", "regionen": ["Berlin"], "arbeitszeit": ["teilzeit"], "veroeffentlicht": "2026-10-30", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:10001-1003932851-S", "titel": "Wiss. Mitarbeiter:in zur Promotion „Stadt- und Regionalökonomie“", "arbeitgeber": "HafenCity Universität Hamburg", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003932851-S", "quelle": "Arbeitsagentur", "typ": "phd", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["teilzeit"], "veroeffentlicht": "2026-10-29", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:10001-1003925631-S", "titel": "(Junior) Data Analyst mit Schwerpunkt militärische Luftfahrzeuge (m/w/d)", "arbeitgeber": "IABG Industrieanlagen Betriebs-GmbH", "ort": "Berlin", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003925631-S", "quelle": "Arbeitsagentur", "typ": "einstieg", "remote": false, "land": "Deutschland", "regionen": ["Berlin"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-10-28", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:10001-1003913492-S", "titel": "41/2026 - Student Assistent (f/m/d)", "arbeitgeber": "Museum für Naturkunde", "ort": "Berlin", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003913492-S", "quelle": "Arbeitsagentur", "typ": "praktikum", "remote": false, "land": "Deutschland", "regionen": ["Berlin"], "arbeitszeit": ["teilzeit"], "veroeffentlicht": "2026-10-26", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:10001-1003914948-S", "titel": "Working Student Global Marketing (m/f/d)", "arbeitgeber": "Nexperia Germany GmbH", "ort": "Hamburg", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003914948-S", "quelle": "Arbeitsagentur", "typ": "werkstudent", "remote": false, "land": "Deutschland", "regionen": ["Hamburg"], "arbeitszeit": ["teilzeit"], "veroeffentlicht": "2026-10-26", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}, {"id": "ba:10001-1003896377-S", "titel": "Trainee (m/w/d) Ethik & Compliance", "arbeitgeber": "VINCI Construction Shared Services GmbH", "ort": "Berlin", "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003896377-S", "quelle": "Arbeitsagentur", "typ": "einstieg", "remote": false, "land": "Deutschland", "regionen": ["Berlin"], "arbeitszeit": ["vollzeit"], "veroeffentlicht": "2026-10-22", "zuerst_gesehen": "2026-11-18", "zuletzt_gesehen": "2026-11-18"}]};
+
+const TYPEN = {
+  werkstudent: "Werkstudent",
+  praktikum: "Praktikum",
+  einstieg: "Berufseinstieg",
+  phd: "PhD / Forschung",
+};
+const ZEITEN = { vollzeit: "Vollzeit", teilzeit: "Teilzeit", unbekannt: "Ohne Angabe" };
+const MERK_KEY = "studijobs-gemerkt";
+const FILTER_KEY = "studijobs-filter";
+
+function regionenVon(j) {
+  const r = new Set(j.regionen && j.regionen.length ? j.regionen : ["Weitere Orte"]);
+  if (j.remote) r.add("Remote");
+  return [...r];
+}
+
+// Filtergruppen: innerhalb einer Gruppe ODER, zwischen Gruppen UND
+const GRUPPEN = [
+  { key: "typ", label: "Jobart", werte: j => [j.typ], optionen: TYPEN, klasse: k => "t-" + k },
+  { key: "zeit", label: "Arbeitszeit", werte: j => (j.arbeitszeit && j.arbeitszeit.length ? j.arbeitszeit : ["unbekannt"]), optionen: ZEITEN },
+  { key: "region", label: "Region", werte: regionenVon, optionen: null },
+];
+
+function lade(key, fallback) {
+  try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; }
+}
+function speichere(key, wert) {
+  try { localStorage.setItem(key, JSON.stringify(wert)); } catch {}
+}
+
+const gespeichert = lade(FILTER_KEY, {});
+const state = {
+  q: "",
+  auswahl: Object.fromEntries(GRUPPEN.map(g => [g.key, new Set(gespeichert[g.key] || [])])),
+  nurNeu: false,
+  nurGemerkt: false,
+  gemerkt: new Set(lade(MERK_KEY, [])),
+};
+
+function filterSpeichern() {
+  speichere(FILTER_KEY, Object.fromEntries(GRUPPEN.map(g => [g.key, [...state.auswahl[g.key]]])));
+}
+
+// Regionen in fester Reihenfolge: wie in der Config, dann Remote und Weitere Orte
+(function regionenOptionen() {
+  const alle = [];
+  for (const j of DATEN.jobs) for (const r of regionenVon(j)) if (!alle.includes(r)) alle.push(r);
+  const hinten = ["Remote", "Weitere Orte"];
+  const vorne = alle.filter(r => !hinten.includes(r)).sort((a, b) => a.localeCompare(b, "de"));
+  GRUPPEN[2].optionen = Object.fromEntries([...vorne, ...hinten.filter(r => alle.includes(r))].map(r => [r, r]));
+  // Gespeicherte Auswahl, die es nicht mehr gibt, verwerfen
+  for (const g of GRUPPEN) for (const k of [...state.auswahl[g.key]]) if (!(k in g.optionen)) state.auswahl[g.key].delete(k);
+})();
+
+const tageZwischen = (a, b) => Math.round((new Date(b) - new Date(a)) / 86400000);
+
+function alterText(datum, heute) {
+  if (!datum) return "";
+  const d = tageZwischen(datum, heute);
+  if (d <= 0) return "heute online";
+  if (d === 1) return "seit gestern";
+  return `seit ${d} Tagen`;
+}
+
+function gruppe(job, heute) {
+  const d = tageZwischen(job.zuerst_gesehen, heute);
+  if (d <= 0) return "Heute neu";
+  if (d === 1) return "Gestern";
+  if (d <= 7) return "Diese Woche";
+  return "Früher";
+}
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+// Prüft alle Filter, optional ohne eine Gruppe (für die Zahlen an den Chips)
+function passt(j, ohneGruppe) {
+  const q = state.q.trim().toLowerCase();
+  if (q && !`${j.titel} ${j.arbeitgeber} ${j.ort} ${regionenVon(j).join(" ")}`.toLowerCase().includes(q)) return false;
+  if (ohneGruppe !== "anzeigen") {
+    if (state.nurNeu && j.zuerst_gesehen !== DATEN.heute) return false;
+    if (state.nurGemerkt && !state.gemerkt.has(j.id)) return false;
+  }
+  for (const g of GRUPPEN) {
+    if (g.key === ohneGruppe) continue;
+    const sel = state.auswahl[g.key];
+    if (sel.size && !g.werte(j).some(w => sel.has(w))) return false;
+  }
+  return true;
+}
+
+function aktiveFilter() {
+  return GRUPPEN.reduce((n, g) => n + state.auswahl[g.key].size, 0) + state.nurNeu + state.nurGemerkt;
+}
+
+function chip(label, n, pressed, cls, onClick) {
+  const b = document.createElement("button");
+  b.type = "button";
+  b.className = "chip " + (cls || "");
+  b.setAttribute("aria-pressed", pressed);
+  b.disabled = !pressed && n === 0;
+  b.innerHTML = `${esc(label)} <span class="n">${n}</span>`;
+  b.addEventListener("click", onClick);
+  return b;
+}
+
+function gruppenZeile(label) {
+  const row = document.createElement("div");
+  row.className = "group";
+  row.setAttribute("role", "group");
+  row.setAttribute("aria-label", label);
+  row.innerHTML = `<div class="group-label">${esc(label)}</div><div class="chips"></div>`;
+  return row;
+}
+
+function renderFilter() {
+  const panel = document.getElementById("panel");
+  panel.innerHTML = "";
+  for (const g of GRUPPEN) {
+    // Nur Optionen zeigen, die im Datenbestand überhaupt vorkommen
+    const vorhanden = Object.keys(g.optionen).filter(k => DATEN.jobs.some(j => g.werte(j).includes(k)));
+    if (vorhanden.length < (g.key === "typ" ? 1 : 2)) continue;
+    const row = gruppenZeile(g.label);
+    const box = row.querySelector(".chips");
+    const basis = DATEN.jobs.filter(j => passt(j, g.key));
+    for (const k of vorhanden) {
+      const n = basis.filter(j => g.werte(j).includes(k)).length;
+      const sel = state.auswahl[g.key];
+      box.append(chip(g.optionen[k], n, sel.has(k), g.klasse ? g.klasse(k) : "", () => {
+        sel.has(k) ? sel.delete(k) : sel.add(k);
+        filterSpeichern();
+        render();
+      }));
+    }
+    panel.append(row);
+  }
+  const row = gruppenZeile("Anzeigen");
+  const box = row.querySelector(".chips");
+  const basis = DATEN.jobs.filter(j => passt(j, "anzeigen"));
+  box.append(chip("Nur neue", basis.filter(j => j.zuerst_gesehen === DATEN.heute).length, state.nurNeu, "",
+    () => { state.nurNeu = !state.nurNeu; render(); }));
+  box.append(chip("Gemerkt", basis.filter(j => state.gemerkt.has(j.id)).length, state.nurGemerkt, "",
+    () => { state.nurGemerkt = !state.nurGemerkt; render(); }));
+  panel.append(row);
+
+  const n = aktiveFilter();
+  document.getElementById("reset").hidden = n === 0;
+  if (n) {
+    const r = document.createElement("button");
+    r.type = "button";
+    r.className = "btn reset-mobil";
+    r.textContent = "Alle Filter zurücksetzen";
+    r.addEventListener("click", zuruecksetzen);
+    panel.append(r);
+  }
+  document.getElementById("toggle-filter").textContent = n ? `Filter (${n})` : "Filter";
+}
+
+function renderListe() {
+  const liste = document.getElementById("list");
+  const jobs = DATEN.jobs.filter(j => passt(j));
+  if (!DATEN.jobs.length) {
+    liste.innerHTML = `<div class="empty"><strong>Noch keine Stellen gefunden.</strong>Prüfe die Suchbegriffe und Orte in der config.yaml und starte den Workflow danach erneut.</div>`;
+    return;
+  }
+  if (!jobs.length) {
+    liste.innerHTML = `<div class="empty"><strong>Keine Stelle passt zu diesen Filtern.</strong>Entferne einen Filter oder ändere den Suchtext.</div>`;
+    return;
+  }
+  const reihenfolge = ["Heute neu", "Gestern", "Diese Woche", "Früher"];
+  const gruppen = new Map(reihenfolge.map(g => [g, []]));
+  for (const j of jobs) gruppen.get(gruppe(j, DATEN.heute)).push(j);
+
+  liste.innerHTML = "";
+  for (const [name, items] of gruppen) {
+    if (!items.length) continue;
+    const sec = document.createElement("section");
+    sec.innerHTML = `<h2>${name} <span class="n">${items.length}</span></h2>`;
+    const ul = document.createElement("ul");
+    ul.className = "jobs";
+    for (const j of items) {
+      const li = document.createElement("li");
+      const istNeu = j.zuerst_gesehen === DATEN.heute;
+      li.className = "job" + (istNeu ? " is-new" : "");
+      const wo = [j.ort, j.remote ? "Remote möglich" : ""].filter(Boolean).join(", ");
+      const zeit = ["vollzeit", "teilzeit"].filter(z => (j.arbeitszeit || []).includes(z)).map(z => ZEITEN[z]).join(" oder ");
+      const gemerkt = state.gemerkt.has(j.id);
+      li.innerHTML = `
+        <a class="job-title" href="${esc(j.url)}" target="_blank" rel="noopener"><span>${esc(j.titel)}</span></a>
+        <div class="meta">
+          <span class="typ t-${esc(j.typ)}">${esc(TYPEN[j.typ] || j.typ)}</span>
+          ${j.arbeitgeber ? `<span>${esc(j.arbeitgeber)}</span>` : ""}
+          ${wo ? `<span>${esc(wo)}</span>` : ""}
+          ${zeit ? `<span>${esc(zeit)}</span>` : ""}
+          <span>über ${esc(j.quelle)}</span>
+        </div>
+        <div class="side">
+          <span class="age">${alterText(j.veroeffentlicht, DATEN.heute)}</span>
+          <button class="star" type="button" aria-pressed="${gemerkt}">${gemerkt ? "Gemerkt" : "Merken"}</button>
+        </div>`;
+      li.querySelector(".star").addEventListener("click", () => {
+        state.gemerkt.has(j.id) ? state.gemerkt.delete(j.id) : state.gemerkt.add(j.id);
+        speichere(MERK_KEY, [...state.gemerkt]);
+        render();
+      });
+      ul.append(li);
+    }
+    sec.append(ul);
+    liste.append(sec);
+  }
+}
+
+function renderKopf() {
+  const akt = new Date(DATEN.aktualisiert);
+  const wann = akt.toLocaleString("de-DE", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
+  const neu = DATEN.jobs.filter(j => j.zuerst_gesehen === DATEN.heute).length;
+  const neuText = neu === 1 ? "1 davon ist neu" : `${neu} davon sind neu`;
+  document.getElementById("lead").innerHTML =
+    `<strong>${DATEN.jobs.length} offene Stellen</strong>, ${neuText}. Zuletzt aktualisiert am ${esc(wann)} Uhr.`;
+  const kaputt = Object.entries(DATEN.quellen || {}).filter(([, s]) => s !== "ok").map(([n]) => n);
+  if (kaputt.length) {
+    const w = document.getElementById("warn");
+    w.hidden = false;
+    w.textContent = `Beim letzten Lauf war nicht vollständig erreichbar: ${kaputt.join(", ")}. Ältere Stellen von dort bleiben deshalb vorerst stehen.`;
+  }
+  document.getElementById("foot").textContent =
+    "Quellen: " + Object.keys(DATEN.quellen || {}).join(", ") + ". Filter und gemerkte Stellen werden nur in diesem Browser gespeichert.";
+}
+
+function render() { renderFilter(); renderListe(); }
+
+document.getElementById("q").addEventListener("input", e => { state.q = e.target.value; render(); });
+function zuruecksetzen() {
+  for (const g of GRUPPEN) state.auswahl[g.key].clear();
+  state.nurNeu = state.nurGemerkt = false;
+  filterSpeichern();
+  render();
+}
+document.getElementById("reset").addEventListener("click", zuruecksetzen);
+document.getElementById("toggle-filter").addEventListener("click", e => {
+  const panel = document.getElementById("panel");
+  const offen = panel.classList.toggle("offen");
+  e.currentTarget.setAttribute("aria-expanded", offen);
+});
+renderKopf();
+render();
+</script>
+</body>
+</html>
