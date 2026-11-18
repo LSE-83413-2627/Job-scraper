@@ -21,6 +21,7 @@
   --t-praktikum: #0C7457;
   --t-einstieg: #7038B5;
   --t-phd: #A8253B;
+  --t-trainee: #9A5B00;
   color-scheme: light;
   box-sizing: border-box;
   padding-top: env(safe-area-inset-top, 0px);
@@ -30,14 +31,14 @@
   :root:not([data-theme="light"]) {
     --paper: #11161C; --surface: #19212A; --ink: #E5EAEF; --muted: #97A3AF;
     --line: #2B3540; --mark: rgba(255, 214, 51, .34); --focus: #8DB2FF;
-    --t-werkstudent: #8DB2FF; --t-praktikum: #5FD3A9; --t-einstieg: #C29BF5; --t-phd: #F28C9D;
+    --t-werkstudent: #8DB2FF; --t-praktikum: #5FD3A9; --t-einstieg: #C29BF5; --t-phd: #F28C9D; --t-trainee: #F2B95C;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --paper: #11161C; --surface: #19212A; --ink: #E5EAEF; --muted: #97A3AF;
   --line: #2B3540; --mark: rgba(255, 214, 51, .34); --focus: #8DB2FF;
-  --t-werkstudent: #8DB2FF; --t-praktikum: #5FD3A9; --t-einstieg: #C29BF5; --t-phd: #F28C9D;
+  --t-werkstudent: #8DB2FF; --t-praktikum: #5FD3A9; --t-einstieg: #C29BF5; --t-phd: #F28C9D; --t-trainee: #F2B95C;
   color-scheme: dark;
 }
 *, *::before, *::after { box-sizing: inherit; }
@@ -102,6 +103,7 @@ body::before {
 .chip.t-praktikum { --c: var(--t-praktikum); }
 .chip.t-einstieg { --c: var(--t-einstieg); }
 .chip.t-phd { --c: var(--t-phd); }
+.chip.t-trainee { --c: var(--t-trainee); }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .chip[aria-pressed="true"] { color: #11161C; }
 }
@@ -130,6 +132,7 @@ li.job {
 .typ.t-praktikum { color: var(--t-praktikum); }
 .typ.t-einstieg { color: var(--t-einstieg); }
 .typ.t-phd { color: var(--t-phd); }
+.typ.t-trainee { color: var(--t-trainee); }
 .side { grid-column: 2; grid-row: 1 / span 2; display: flex; flex-direction: column; align-items: flex-end; gap: .3rem; }
 .age { color: var(--muted); font-size: .85rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .star {
@@ -181,6 +184,7 @@ const TYPEN = {
   werkstudent: "Werkstudent",
   praktikum: "Praktikum",
   einstieg: "Berufseinstieg",
+  trainee: "Trainee",
   phd: "PhD / Forschung",
 };
 const ZEITEN = { vollzeit: "Vollzeit", teilzeit: "Teilzeit", unbekannt: "Ohne Angabe" };

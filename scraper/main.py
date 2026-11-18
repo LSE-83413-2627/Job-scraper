@@ -37,10 +37,57 @@ KATEGORIEN = [
                      r"student (analyst|researcher|data)"]),
     ("praktikum", [r"praktik", r"internship", r"\bintern\b", r"placement", r"abschlussarbeit",
                    r"masterarbeit", r"bachelorarbeit", r"\bthesis\b", r"summer analyst"]),
+    ("trainee", [r"trainee", r"graduate (program|programme|scheme)", r"nachwuchs(förder)?programm",
+                 r"einstiegsprogramm", r"rotation(al)? program", r"junior[- ]?programm"]),
     ("einstieg", [r"junior", r"absolvent", r"einsteiger", r"berufsstart", r"\bgraduate",
-                  r"entry[- ]level", r"trainee", r"young professional", r"direkteinstieg",
-                  r"fast stream", r"associate analyst", r"analyst i\b", r"early careers?"]),
+                  r"entry[- ]level", r"young professional", r"einstieg",
+                  r"nachwuchs", r"volont[äa]r", r"fast stream", r"associate analyst",
+                  r"analyst i\b", r"early careers?"]),
 ]
+
+# Hinweise in der Stellenbeschreibung, dass eine Stelle für Berufseinsteiger passt …
+EINSTIEG_JA = [
+    r"berufseinsteiger", r"berufseinstieg", r"absolvent", r"einstiegsposition", r"einstiegsstelle",
+    r"direkteinstieg", r"(ersten?|erster) (praktischen? |relevanten? |einschlägigen? )?(berufs|praxis)?erfahrung",
+    r"keine berufserfahrung", r"ohne berufserfahrung",
+    r"berufserfahrung (ist |sind )?(von vorteil|wünschenswert|nicht (zwingend )?erforderlich|keine voraussetzung|kein muss)",
+    r"\b[01]\s*(-|–|bis)\s*2 jahre", r"praktika|werkstudententätigkeit",
+    r"entry[- ]level", r"recent graduate", r"graduates?\b", r"first (professional |work |relevant )?experience",
+    r"no (prior )?experience (is )?(required|necessary)", r"\b[01]\s*(-|–|to)\s*2 years", r"\bjunior\b",
+]
+# … und Hinweise, dass deutlich mehr Erfahrung verlangt wird
+EINSTIEG_NEIN = [
+    r"mehrjährige", r"langjährige", r"fundierte (berufs)?erfahrung", r"umfangreiche (berufs)?erfahrung",
+    r"(mindestens|min\.|wenigstens) ([3-9]|drei|vier|fünf|sechs)\s*(jahre|jahren)",
+    r"\b([3-9]|1[0-9])\s*\+?\s*(jahre|jahren)\b[^.]{0,40}erfahrung",
+    r"(at least|minimum( of)?) ([3-9]|three|four|five)\s*\+?\s*years",
+    r"\b([3-9]|1[0-9])\s*\+?\s*years\b[^.]{0,40}experience", r"several years", r"extensive experience",
+    r"führungserfahrung", r"personalverantwortung", r"leadership experience",
+]
+
+
+# Woran ein allgemein ausgeschriebenes Trainee-Programm als passend fürs Fach erkannt wird,
+# falls in der Config keine eigenen trainee_stichwoerter stehen
+TRAINEE_STICHWOERTER = [
+    "data", "datenanalyse", "datenanalyst", "analytics", "analytik", "statistik", "statistisch",
+    "sozialforschung", "marktforschung", "business intelligence", "datenbasiert", "datengetrieben",
+    "data science", "machine learning", "python", "sql", "quantitativ", "research",
+]
+
+
+def passt_fach_text(text: str, cfg: dict) -> bool:
+    woerter = cfg.get("trainee_stichwoerter") or TRAINEE_STICHWOERTER
+    t = _norm(text)
+    return any(re.search(rf"(?<![a-zäöüß]){re.escape(_norm(w))}", t) for w in woerter)
+
+
+def ist_einstieg(beschreibung: str) -> bool:
+    text = _norm(beschreibung)
+    if not text:
+        return False
+    ja = any(re.search(m, text) for m in EINSTIEG_JA)
+    nein = any(re.search(m, text) for m in EINSTIEG_NEIN)
+    return ja and not nein
 
 
 def lade_config() -> dict:
@@ -52,7 +99,11 @@ def _norm(text: str) -> str:
     return re.sub(r"\s+", " ", (text or "").lower()).strip()
 
 
-def kategorisiere(job: sources.Rohjob) -> str | None:
+def kategorisiere(job: sources.Rohjob, einstieg_ids: set[str] = frozenset()) -> str | None:
+    if job.extra.get("trainee_suche"):
+        # Aus der allgemeinen Trainee-Suche nur echte Trainee-Programme übernehmen
+        titel = _norm(job.titel)
+        return "trainee" if any(re.search(m, titel) for m in dict(KATEGORIEN)["trainee"]) else None
     titel = _norm(job.titel)
     for typ, muster in KATEGORIEN:
         if any(re.search(m, titel) for m in muster):
@@ -62,6 +113,8 @@ def kategorisiere(job: sources.Rohjob) -> str | None:
         return "praktikum"
     if job.extra.get("feste_kategorie"):
         return job.typ_hinweis
+    if job.id in einstieg_ids:
+        return "einstieg"
     return None
 
 
@@ -85,11 +138,16 @@ def arbeitszeit_bestimmen(job: sources.Rohjob, typ: str) -> list[str]:
         zeiten.add("vollzeit")
     if typ == "werkstudent" and not zeiten:
         zeiten.add("teilzeit")
+    if typ == "trainee" and not zeiten:
+        zeiten.add("vollzeit")  # Trainee-Programme sind praktisch immer Vollzeit
     return sorted(zeiten)
 
 
-def filtern(rohjobs: list[sources.Rohjob], cfg: dict) -> dict[str, dict]:
+def filtern(rohjobs: list[sources.Rohjob], cfg: dict, einstieg_ids: set[str] = frozenset(),
+            trainee_ids: set[str] = frozenset()) -> dict[str, dict]:
     aktiv = {k for k, v in (cfg.get("jobarten") or {}).items() if v}
+    if sources.trainee_aktiv(cfg):
+        aktiv.add("trainee")
     ausschluss = cfg.get("ausschliessen") or []
     fachbegriffe = (cfg.get("fach_stichwoerter") or
                     (cfg.get("suchbegriffe_de") or []) + (cfg.get("suchbegriffe_en") or []))
@@ -103,8 +161,11 @@ def filtern(rohjobs: list[sources.Rohjob], cfg: dict) -> dict[str, dict]:
             continue
         if j.extra.get("nur_mit_suchbegriff") and not passt_zum_fach(j, fachbegriffe):
             continue
-        typ = kategorisiere(j)
+        typ = kategorisiere(j, einstieg_ids)
         if typ not in aktiv:
+            continue
+        # Allgemeine Trainee-Programme nur, wenn Titel oder Beschreibung zum Fach passen
+        if j.extra.get("trainee_suche") and not passt_fach_text(j.titel, cfg) and j.id not in trainee_ids:
             continue
         zeiten = arbeitszeit_bestimmen(j, typ)
 
@@ -127,6 +188,58 @@ def filtern(rohjobs: list[sources.Rohjob], cfg: dict) -> dict[str, dict]:
             "veroeffentlicht": j.veroeffentlicht,
         }
     return ergebnis
+
+
+GEPRUEFT = ROOT / "data" / "geprueft.json"
+
+
+def beschreibungen_pruefen(rohjobs: list[sources.Rohjob], cfg: dict, heute: str) -> tuple[set[str], set[str]]:
+    """Liest Stellenbeschreibungen, wo der Titel nicht reicht, und merkt sich das Ergebnis,
+    damit jede Stelle nur einmal abgerufen wird.
+    Ergebnis: (Stellen, die laut Beschreibung für Einsteiger passen,
+               allgemeine Trainee-Programme, die laut Beschreibung zum Fach passen)"""
+    arten = cfg.get("jobarten") or {}
+    ausschluss = cfg.get("ausschliessen") or []
+    cache: dict[str, dict] = {}
+    if GEPRUEFT.exists():
+        cache = json.loads(GEPRUEFT.read_text(encoding="utf-8"))
+    grenze = (datetime.fromisoformat(heute) - timedelta(days=60)).date().isoformat()
+    cache = {k: v for k, v in cache.items() if v.get("datum", heute) >= grenze}
+
+    einstieg_kand: dict[str, sources.Rohjob] = {}
+    trainee_kand: dict[str, sources.Rohjob] = {}
+    for j in rohjobs:
+        if ist_ausgeschlossen(j.titel, ausschluss):
+            continue
+        if arten.get("einstieg") and j.extra.get("beschreibung_pruefen") and kategorisiere(j) is None:
+            einstieg_kand.setdefault(j.id, j)
+        if (j.extra.get("trainee_suche") and kategorisiere(j) == "trainee"
+                and not passt_fach_text(j.titel, cfg)):
+            trainee_kand.setdefault(j.id, j)
+
+    # Abzurufen: alles, wofür das benötigte Ergebnis noch nicht im Cache steht
+    offen = {jid: j for jid, j in einstieg_kand.items() if "einstieg" not in cache.get(jid, {})}
+    offen.update({jid: j for jid, j in trainee_kand.items() if "fach" not in cache.get(jid, {})})
+    # Trainee-Programme zuerst (wenige, aber wertvoll), dann die neuesten Stellen
+    reihenfolge = sorted(offen.values(), key=lambda j: (j.id in trainee_kand, j.veroeffentlicht or ""), reverse=True)
+    budget = int((cfg.get("deutschland") or {}).get("max_beschreibungen_pro_lauf", 300))
+    texte = sources.hole_ba_beschreibungen([j.extra["refnr"] for j in reihenfolge], budget)
+    for j in reihenfolge:
+        if j.extra["refnr"] in texte:
+            text = texte[j.extra["refnr"]] or ""
+            cache[j.id] = {"einstieg": bool(text) and ist_einstieg(text),
+                           "fach": bool(text) and passt_fach_text(text, cfg),
+                           "datum": heute}
+
+    GEPRUEFT.parent.mkdir(parents=True, exist_ok=True)
+    GEPRUEFT.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+    einstieg = {jid for jid in einstieg_kand if cache.get(jid, {}).get("einstieg")}
+    trainee = {jid for jid in trainee_kand if cache.get(jid, {}).get("fach")}
+    log.info("Einstieg geprüft: %d Kandidaten, %d passend, %d noch offen",
+             len(einstieg_kand), len(einstieg), sum(1 for k in einstieg_kand if "einstieg" not in cache.get(k, {})))
+    log.info("Trainee-Programme geprüft: %d allgemeine, %d passend zum Fach, %d noch offen",
+             len(trainee_kand), len(trainee), sum(1 for k in trainee_kand if "fach" not in cache.get(k, {})))
+    return einstieg, trainee
 
 
 def zusammenfuehren(alt: dict[str, dict], neu: dict[str, dict],
@@ -208,7 +321,8 @@ def main() -> int:
         if feed.get("url"):
             abrufen(feed["name"], sources.hole_rss, feed)
 
-    neu = filtern(rohjobs, cfg)
+    einstieg_ids, trainee_ids = beschreibungen_pruefen(rohjobs, cfg, heute)
+    neu = filtern(rohjobs, cfg, einstieg_ids, trainee_ids)
     alt = {}
     if DATEN.exists():
         alt = {j["id"]: j for j in json.loads(DATEN.read_text(encoding="utf-8"))}

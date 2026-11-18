@@ -86,11 +86,9 @@ def _ba_suchen(cfg: dict) -> list[dict]:
     if arten.get("praktikum"):
         vorlagen += [("praktikum", "{b}", 34)]  # 34 = Praktikum/Trainee
     if arten.get("einstieg"):
-        vorlagen += [
-            ("einstieg", "Junior {b}", 1),
-            ("einstieg", "Absolvent {b}", 1),
-            ("einstieg", "Berufseinsteiger {b}", 1),
-        ]
+        # Breite Suche: Die meisten Einstiegsstellen heißen schlicht "Data Analyst (m/w/d)".
+        # Ob sie für Berufseinsteiger sind, steht erst in der Beschreibung (siehe main.py).
+        vorlagen += [("einstieg", "{b}", 1)]
     if arten.get("phd"):
         vorlagen += [
             ("phd", "Doktorand {b}", 1),
@@ -122,7 +120,23 @@ def _ba_suchen(cfg: dict) -> list[dict]:
             if de.get("remote_einbeziehen") and orte != [(None, None)]:
                 suchen.append(dict(typ=typ, was=was, angebotsart=angebotsart, wo=None,
                                    umkreis=None, remote=True, arbeitszeit=None, suchort="Remote"))
+
+    # Eigene Trainee-Suche: alle Trainee-Programme vor Ort, unabhängig vom Fachbegriff.
+    # Welche davon zu deinem Fach passen, wird danach anhand der Beschreibung geprüft.
+    if trainee_aktiv(cfg) and de.get("trainee_suche", True):
+        for was in ("Trainee", "Traineeprogramm"):
+            for angebotsart in (34, 1):
+                for ort, umkreis in orte:
+                    suchen.append(dict(typ="trainee", was=was, angebotsart=angebotsart, wo=ort,
+                                       umkreis=umkreis, remote=False, arbeitszeit=None,
+                                       suchort=ort or "Deutschland", trainee_suche=True,
+                                       max_seiten=int(de.get("trainee_max_seiten", 3))))
     return suchen
+
+
+def trainee_aktiv(cfg: dict) -> bool:
+    # Ältere Configs kennen "trainee" noch nicht: dann standardmäßig an
+    return (cfg.get("jobarten") or {}).get("trainee", True)
 
 
 def _ort_text(job: dict) -> str:
@@ -160,7 +174,7 @@ def hole_arbeitsagentur(cfg: dict) -> list[Rohjob]:
     for s in suchen:
         if fehler_in_folge >= MAX_FEHLER_IN_FOLGE:
             break
-        for seite in range(1, max_seiten + 1):
+        for seite in range(1, s.get("max_seiten", max_seiten) + 1):
             params = {
                 "was": s["was"],
                 "angebotsart": s["angebotsart"],
@@ -208,7 +222,11 @@ def hole_arbeitsagentur(cfg: dict) -> list[Rohjob]:
                     suchort=s["suchort"],
                     arbeitszeit={"vz": ["vollzeit"], "tz": ["teilzeit"]}.get(s["arbeitszeit"], []),
                     extra={"angebotsart": s["angebotsart"],
-                           "externeUrl": a.get("externeURL") or a.get("externeUrl")},
+                           "externeUrl": a.get("externeURL") or a.get("externeUrl"),
+                           "refnr": refnr,
+                           # Stellen aus der breiten Suche ohne Hinweis im Titel: Beschreibung prüfen
+                           "beschreibung_pruefen": s["typ"] == "einstieg",
+                           "trainee_suche": s.get("trainee_suche", False)},
                 ))
             time.sleep(PAUSE_SEKUNDEN)
             gesamt = int(daten.get("maxErgebnisse") or 0)
@@ -223,6 +241,40 @@ def hole_arbeitsagentur(cfg: dict) -> list[Rohjob]:
     if suchen and erfolgreiche == 0:
         raise QuelleFehlgeschlagen("Keine einzige Anfrage an die Arbeitsagentur war erfolgreich")
     return jobs
+
+
+BA_DETAIL_URL = "https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobdetails/{code}"
+
+
+def hole_ba_beschreibungen(refnrs: list[str], budget: int) -> dict[str, str | None]:
+    """Lädt Stellenbeschreibungen. Ergebnis: refnr → Text, oder None wenn die Stelle weg ist (404).
+    Fehlgeschlagene Abrufe fehlen im Ergebnis und werden beim nächsten Lauf erneut versucht."""
+    session = requests.Session()
+    ergebnis: dict[str, str | None] = {}
+    fehler_in_folge = 0
+    for refnr in refnrs[:budget]:
+        if fehler_in_folge >= MAX_FEHLER_IN_FOLGE:
+            log.error("Stellenbeschreibungen: Abbruch nach %d Fehlern in Folge", MAX_FEHLER_IN_FOLGE)
+            break
+        code = base64.b64encode(refnr.encode()).decode()
+        try:
+            r = session.get(BA_DETAIL_URL.format(code=code), headers=BA_HEADERS, timeout=30)
+            if r.status_code == 404:
+                ergebnis[refnr] = None
+                fehler_in_folge = 0
+                continue
+            r.raise_for_status()
+            d = r.json()
+            ergebnis[refnr] = " ".join(str(d.get(k) or "") for k in
+                                       ("stellenangebotsTitel", "stellenangebotsBeschreibung",
+                                        "stellenbeschreibung", "beschreibung"))
+            fehler_in_folge = 0
+        except Exception as e:
+            fehler_in_folge += 1
+            log.warning("Beschreibung %s nicht abrufbar: %s", refnr, e)
+        time.sleep(PAUSE_SEKUNDEN / 2)
+    log.info("Stellenbeschreibungen: %d von %d abgerufen", len(ergebnis), min(len(refnrs), budget))
+    return ergebnis
 
 
 ADZUNA_URL = "https://api.adzuna.com/v1/api/jobs/{land}/search/{seite}"
