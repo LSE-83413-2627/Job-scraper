@@ -101,6 +101,46 @@
   "zuletzt_gesehen": "2026-11-18"
  },
  {
+  "id": "ba:12122-981457259-S",
+  "titel": "Datenassistent (m/w/d)",
+  "arbeitgeber": "persona service AG & Co.KG Niederlassung Chemnitz-Nord",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12122-981457259-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-05",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:20390-JR0088730-S",
+  "titel": "Associate Analyst, Business Operations - (Fixed Term) (Labeling Operations, Consumer)",
+  "arbeitgeber": "Delivery Hero SE",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20390-JR0088730-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-16",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
   "id": "ba:10001-1003999289-S",
   "titel": "1 Doktorand*in (m/w/d)",
   "arbeitgeber": "Deutsches Institut für Ernährungsforschung Stiftung des öffentl.Rechts",
@@ -341,6 +381,166 @@
   "zuletzt_gesehen": "2026-11-18"
  },
  {
+  "id": "ba:15794-471863_50541-1-S",
+  "titel": "Trainee Cloud & Data - Dein Einstieg in Artificial Intelligence & Data (m/w/d)",
+  "arbeitgeber": "Deloitte GmbH",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15794-471863_50541-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "trainee",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-11",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:15794-471862_50565-1-S",
+  "titel": "Trainee Cloud & Data - Dein Einstieg in AI Insights & Intelligent Automation (m/w/d)",
+  "arbeitgeber": "Deloitte GmbH",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15794-471862_50565-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "trainee",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-17",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:10001-1003901051-S",
+  "titel": "Software Development Engineer II, AWS Config",
+  "arbeitgeber": "Amazon Web Services Developmen t Center Germany GmbH",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003901051-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-10-22",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:17031-00024402b7a001-S",
+  "titel": "Doctoral Researcher (f_m_x) - Forest Carbon Attribution from Earth Observation and Atmospheric Const",
+  "arbeitgeber": "GFZ Helmholtz-Zentrum für Geoforschung",
+  "ort": "Potsdam (Brandenburg)",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/17031-00024402b7a001-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit"
+  ],
+  "veroeffentlicht": "2026-11-05",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:17031-00024402b7f001-S",
+  "titel": "Doctoral researcher (f_m_x) – Terrestrial and Cryo-Hydrological Gravimetry",
+  "arbeitgeber": "GFZ Helmholtz-Zentrum für Geoforschung",
+  "ort": "Potsdam (Brandenburg)",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/17031-00024402b7f001-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit"
+  ],
+  "veroeffentlicht": "2026-10-22",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:10001-1003940378-S",
+  "titel": "Consultant SAP Data & Analytics (m/w/d)",
+  "arbeitgeber": "ISR Information Products AG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003940378-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": true,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-10-30",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:10001-1003964383-S",
+  "titel": "Public Cloud Engineer (m/w/d) Generative AI befristet bis 31.01.2028",
+  "arbeitgeber": "SIGNAL IDUNA Krankenversicherung a. G.",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003964383-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-10",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:10001-1003964360-S",
+  "titel": "Public Cloud Engineer (m/w/d) Schwerpunkt Generative AI",
+  "arbeitgeber": "SIGNAL IDUNA Krankenversicherung a. G.",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003964360-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-10",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
   "id": "ba:10001-1003990884-S",
   "titel": "Studentische:r Mitarbeiter:in (m/w/d) - Bereich Transfer und Dialog",
   "arbeitgeber": "Weizenbaum-Institut e. V.",
@@ -357,6 +557,27 @@
    "teilzeit"
   ],
   "veroeffentlicht": "2026-11-10",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:16729-2026-725-S",
+  "titel": "Wissenschaftliche/r Mitarbeitende/r (m/w/d)",
+  "arbeitgeber": "Bundespolizeipräsidium",
+  "ort": "Potsdam (Brandenburg)",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/16729-2026-725-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit",
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-18",
   "zuerst_gesehen": "2026-11-18",
   "zuletzt_gesehen": "2026-11-18"
  },
@@ -394,7 +615,8 @@
    "Berlin"
   ],
   "arbeitszeit": [
-   "teilzeit"
+   "teilzeit",
+   "vollzeit"
   ],
   "veroeffentlicht": "2026-10-30",
   "zuerst_gesehen": "2026-11-18",
@@ -434,7 +656,8 @@
    "Hamburg"
   ],
   "arbeitszeit": [
-   "teilzeit"
+   "teilzeit",
+   "vollzeit"
   ],
   "veroeffentlicht": "2026-11-06",
   "zuerst_gesehen": "2026-11-18",
@@ -487,7 +710,7 @@
   "ort": "Berlin",
   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003896377-S",
   "quelle": "Arbeitsagentur",
-  "typ": "einstieg",
+  "typ": "trainee",
   "remote": false,
   "land": "Deutschland",
   "regionen": [
@@ -557,6 +780,190 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-11",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:10001-1003998273-S",
+  "titel": "Datenanalystinnen/Datenanalysten (m/w/d)",
+  "arbeitgeber": "BG BAU BG der Bauwirtschaft",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003998273-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": true,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit",
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-11",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:10001-1003950433-S",
+  "titel": "Referentin/Referent Data Scientist (m/w/d)",
+  "arbeitgeber": "BG BAU BG der Bauwirtschaft",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003950433-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": true,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit",
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-03",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:12265-522826_JB5285692-S",
+  "titel": "Qualitätsingenieur Luftfahrt (m/w/d) | AIRBUS | 18 Monate befristet, Option auf Verlängerung",
+  "arbeitgeber": "FERCHAU GmbH Niederlassung Hamburg-City",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12265-522826_JB5285692-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-10-30",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:13032-DP78CO2MDAFTOJND-S",
+  "titel": "Supply Chain Logistiker Airbus (m/w/d)",
+  "arbeitgeber": "Argo Aviation GmbH",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13032-DP78CO2MDAFTOJND-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-10-25",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:18989-891233324-S",
+  "titel": "Trainee SAP Public Sector (w/m/d)",
+  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-891233324-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "trainee",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-18",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:10001-1003967804-S",
+  "titel": "Trainee IT Consulting w/m/d - Datacenter",
+  "arbeitgeber": "Computacenter AG & Co. oHG",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003967804-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "trainee",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin",
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-05",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:13644-304837-S",
+  "titel": "Trainee IT System Engineer (m/w/d) Security / Data Center / Collaboration",
+  "arbeitgeber": "avodaq",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13644-304837-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "trainee",
+  "remote": true,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin",
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-18",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:18989-984541861-S",
+  "titel": "Trainee SAP Public Sector (w/m/d)",
+  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984541861-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "trainee",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-18",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-18"
+ },
+ {
+  "id": "ba:15794-471864_50564-1-S",
+  "titel": "Trainee Cloud & Data - Dein Einstieg in Cloud Consulting & Engineering im April 2027 (m/w/d)",
+  "arbeitgeber": "Deloitte GmbH",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15794-471864_50564-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "trainee",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-17",
   "zuerst_gesehen": "2026-11-18",
   "zuletzt_gesehen": "2026-11-18"
  }
