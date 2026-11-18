@@ -401,7 +401,7 @@ function renderKopf() {
   if (kaputt.length) {
     const w = document.getElementById("warn");
     w.hidden = false;
-    w.textContent = `Beim letzten Lauf war nicht erreichbar: ${kaputt.join(", ")}. Die Stellen von dort stammen vom vorherigen Stand.`;
+    w.textContent = `Beim letzten Lauf war nicht vollständig erreichbar: ${kaputt.join(", ")}. Ältere Stellen von dort bleiben deshalb vorerst stehen.`;
   }
   document.getElementById("foot").textContent =
     "Quellen: " + Object.keys(DATEN.quellen || {}).join(", ") + ". Filter und gemerkte Stellen werden nur in diesem Browser gespeichert.";

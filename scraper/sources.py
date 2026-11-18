@@ -13,13 +13,18 @@ import requests
 
 log = logging.getLogger(__name__)
 
-BA_URL = "https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs"
+BA_URL = "https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v6/jobs"  # v4 seit Herbst 2026 abgeschaltet (403)
 BA_DETAIL_PAGE = "https://www.arbeitsagentur.de/jobsuche/jobdetail/{refnr}"
 BA_HEADERS = {
     "X-API-Key": "jobboerse-jobsuche",
+    "Accept": "application/json",
     "User-Agent": "studijobs/1.0 (privater Job-Digest fuer Studierende)",
 }
 PAUSE_SEKUNDEN = 0.6  # höflich bleiben: kurze Pause zwischen Anfragen
+MAX_FEHLER_IN_FOLGE = 5  # danach wird die Quelle für diesen Lauf aufgegeben
+BA_SEITENGROESSE = 100
+# v6 akzeptiert nur diese Werte für "veroeffentlichtseit", andere werden ignoriert
+BA_ERLAUBTE_TAGE = (0, 1, 7, 14, 28)
 
 
 @dataclass
@@ -43,13 +48,26 @@ class QuelleFehlgeschlagen(Exception):
     pass
 
 
+class EndgueltigerFehler(Exception):
+    pass
+
+
+class TeilErfolg(Exception):
+    """Quelle hat nur einen Teil geliefert: Treffer behalten, aber alte Stellen nicht entfernen."""
+    def __init__(self, jobs, grund):
+        super().__init__(grund)
+        self.jobs = jobs
+
+
 def _get_mit_retry(session: requests.Session, url: str, params: dict, versuche: int = 3):
     for versuch in range(1, versuche + 1):
         try:
             r = session.get(url, params=params, headers=BA_HEADERS, timeout=30)
             if r.status_code in (429, 500, 502, 503, 504):
                 raise requests.HTTPError(f"HTTP {r.status_code}")
-            r.raise_for_status()
+            if 400 <= r.status_code < 500:
+                # Client-Fehler (z. B. 403) werden durch Wiederholen nicht besser
+                raise EndgueltigerFehler(f"HTTP {r.status_code}: {r.text[:200]}")
             return r.json()
         except (requests.RequestException, ValueError) as e:
             if versuch == versuche:
@@ -107,74 +125,101 @@ def _ba_suchen(cfg: dict) -> list[dict]:
     return suchen
 
 
-def _ort_text(arbeitsort: dict | None) -> str:
-    if not arbeitsort:
-        return ""
-    ort = arbeitsort.get("ort") or ""
-    region = arbeitsort.get("region") or ""
-    if ort and region and region not in ort:
-        return f"{ort} ({region})"
-    return ort or region or arbeitsort.get("land", "")
+def _ort_text(job: dict) -> str:
+    """v6: stellenlokationen[].adresse; v4: arbeitsort (alte Form wird weiter verstanden)."""
+    lokationen = job.get("stellenlokationen") or []
+    adresse = (lokationen[0].get("adresse") if lokationen else None) or job.get("arbeitsort") or {}
+    ort = (adresse.get("ort") or "").strip()
+    region = (adresse.get("region") or "").strip()
+    if region.isupper():
+        region = region.title()
+    if ort.isupper():
+        ort = ort.title()
+    text = ort or region or (adresse.get("land") or "").title()
+    if ort and region and region.lower() not in ort.lower():
+        text = f"{ort} ({region})"
+    if len(lokationen) > 1:
+        text += f" und {len(lokationen) - 1} weitere"
+    return text
+
+
+def _ba_tage(tage: int) -> int:
+    """Nächsten von v6 akzeptierten Wert wählen (z. B. 30 → 28)."""
+    return min(BA_ERLAUBTE_TAGE, key=lambda t: abs(t - tage))
 
 
 def hole_arbeitsagentur(cfg: dict) -> list[Rohjob]:
     session = requests.Session()
-    tage = min(int(cfg.get("veroeffentlicht_seit_tagen", 30)), 100)
+    tage = _ba_tage(int(cfg.get("veroeffentlicht_seit_tagen", 28)))
     max_seiten = int(cfg.get("max_seiten_pro_suche", 2))
     jobs: list[Rohjob] = []
-    erfolgreiche = 0
+    erfolgreiche = fehler_in_folge = 0
+    letzter_fehler = ""
     suchen = _ba_suchen(cfg)
 
     for s in suchen:
+        if fehler_in_folge >= MAX_FEHLER_IN_FOLGE:
+            break
         for seite in range(1, max_seiten + 1):
             params = {
                 "was": s["was"],
                 "angebotsart": s["angebotsart"],
                 "veroeffentlichtseit": tage,
                 "page": seite,
-                "size": 50,
+                "size": BA_SEITENGROESSE,
                 "pav": "false",  # keine privaten Arbeitsvermittler
             }
             if s["wo"]:
                 params["wo"] = s["wo"]
                 params["umkreis"] = s["umkreis"]
-            if s["remote"]:
-                params["arbeitszeit"] = "ho"
-            elif s["arbeitszeit"]:
+            if s["arbeitszeit"]:
                 params["arbeitszeit"] = s["arbeitszeit"]
             try:
                 daten = _get_mit_retry(session, BA_URL, params)
             except Exception as e:  # einzelne Suche darf scheitern
-                log.warning("BA-Suche '%s' (%s) fehlgeschlagen: %s", s["was"], s["wo"] or "remote", e)
+                fehler_in_folge += 1
+                letzter_fehler = str(e)
+                log.warning("BA-Suche '%s' (%s) fehlgeschlagen: %s", s["was"], s["suchort"], e)
                 break
             erfolgreiche += 1
-            treffer = daten.get("stellenangebote") or []
+            fehler_in_folge = 0
+            treffer = daten.get("ergebnisliste") or daten.get("stellenangebote") or []
             for a in treffer:
-                refnr = a.get("refnr") or a.get("referenznummer")
+                refnr = a.get("referenznummer") or a.get("refnr")
                 if not refnr:
                     continue
+                homeoffice = bool(a.get("homeofficemoeglich"))
+                # Remote-Suche ist deutschlandweit; nur Stellen mit Homeoffice übernehmen
+                if s["remote"] and not homeoffice:
+                    continue
+                zeitraum = a.get("veroeffentlichungszeitraum") or {}
                 jobs.append(Rohjob(
                     id=f"ba:{refnr}",
-                    titel=(a.get("titel") or a.get("beruf") or "").strip(),
-                    arbeitgeber=(a.get("arbeitgeber") or "").strip(),
-                    ort=_ort_text(a.get("arbeitsort")),
+                    titel=(a.get("stellenangebotsTitel") or a.get("titel")
+                           or a.get("hauptberuf") or a.get("beruf") or "").strip(),
+                    arbeitgeber=(a.get("firma") or a.get("arbeitgeber") or "").strip(),
+                    ort=_ort_text(a),
                     url=BA_DETAIL_PAGE.format(refnr=refnr),
                     quelle="Arbeitsagentur",
-                    veroeffentlicht=a.get("aktuelleVeroeffentlichungsdatum"),
+                    veroeffentlicht=(zeitraum.get("von") or a.get("aktuelleVeroeffentlichungsdatum") or "")[:10] or None,
                     typ_hinweis=s["typ"],
-                    remote=s["remote"],
+                    remote=homeoffice,
                     land="Deutschland",
                     suchort=s["suchort"],
                     arbeitszeit={"vz": ["vollzeit"], "tz": ["teilzeit"]}.get(s["arbeitszeit"], []),
-                    extra={"angebotsart": s["angebotsart"], "beruf": a.get("beruf"),
-                           "externeUrl": a.get("externeUrl")},
+                    extra={"angebotsart": s["angebotsart"],
+                           "externeUrl": a.get("externeURL") or a.get("externeUrl")},
                 ))
             time.sleep(PAUSE_SEKUNDEN)
             gesamt = int(daten.get("maxErgebnisse") or 0)
-            if seite * 50 >= gesamt or not treffer:
+            if seite * BA_SEITENGROESSE >= gesamt or not treffer:
                 break
 
-    log.info("Arbeitsagentur: %d Suchen, %d Rohtreffer", len(suchen), len(jobs))
+    log.info("Arbeitsagentur: %d Suchen, %d erfolgreich, %d Rohtreffer", len(suchen), erfolgreiche, len(jobs))
+    if fehler_in_folge >= MAX_FEHLER_IN_FOLGE and erfolgreiche == 0:
+        raise QuelleFehlgeschlagen(f"Abbruch nach {MAX_FEHLER_IN_FOLGE} Fehlern in Folge, zuletzt: {letzter_fehler}")
+    if fehler_in_folge >= MAX_FEHLER_IN_FOLGE:
+        raise TeilErfolg(jobs, f"Abbruch nach {MAX_FEHLER_IN_FOLGE} Fehlern in Folge, zuletzt: {letzter_fehler}")
     if suchen and erfolgreiche == 0:
         raise QuelleFehlgeschlagen("Keine einzige Anfrage an die Arbeitsagentur war erfolgreich")
     return jobs

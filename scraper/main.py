@@ -186,6 +186,10 @@ def main() -> int:
             rohjobs += funktion(*args)
             status[name] = "ok"
             ok_quellen.add(name)
+        except sources.TeilErfolg as t:
+            log.error("%s nur teilweise abgerufen: %s", name, t)
+            rohjobs += t.jobs
+            status[name] = "teilweise"
         except Exception as e:
             log.error("%s fehlgeschlagen: %s", name, e)
             status[name] = "fehler"
