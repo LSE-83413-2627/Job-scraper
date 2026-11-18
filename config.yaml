@@ -45,7 +45,7 @@ fach_stichwoerter:
 
 # ── UK über Adzuna (kostenloser API-Schlüssel nötig, siehe README) ──
 uk:
-  aktiv: true
+  aktiv: false
   land: gb
   orte:
     - name: London
