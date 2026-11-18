@@ -1,6 +1,6 @@
 # Studi-Jobs
 
-Sucht jeden Morgen automatisch nach Werkstudentenjobs, Praktika, Einstiegsstellen und PhD-Positionen für deinen Studiengang und zeigt sie auf einer eigenen Webseite an. Neue Stellen sind farbig markiert, du kannst nach Jobart filtern, suchen und Stellen merken.
+Sucht jeden Morgen automatisch nach Werkstudentenjobs, Praktika, Einstiegsstellen und PhD-Positionen für ASDS und zeigt sie auf einer eigenen Webseite an. Neue Stellen sind farbig markiert, du kannst nach Jobart filtern, suchen und Stellen merken.
 
 Läuft komplett kostenlos auf GitHub, ohne eigenen Server.
 
