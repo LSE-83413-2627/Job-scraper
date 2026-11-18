@@ -1,0 +1,59 @@
+name: Jobs aktualisieren
+
+on:
+  schedule:
+    - cron: "17 5 * * *"   # täglich ca. 06:17 Uhr (Winterzeit) – GitHub kann sich etwas verspäten
+  workflow_dispatch:         # manuell starten: Actions → "Jobs aktualisieren" → Run workflow
+  push:
+    branches: [main]
+    paths: ["config.yaml", "scraper/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: jobs-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Jobs abrufen und Seite bauen
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: python -m scraper.main
+
+      - name: Datenstand speichern
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add data docs
+          git diff --staged --quiet || git commit -m "Jobs aktualisiert $(date -u +%F)"
+          git push
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

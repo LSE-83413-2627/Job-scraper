@@ -1,0 +1,118 @@
+# ─────────────────────────────────────────────────────────────
+#  Hier passt du alles an. Nach jeder Änderung committen –
+#  der Workflow startet dann automatisch neu.
+# ─────────────────────────────────────────────────────────────
+
+studiengang: "Applied Social Data Science"
+
+# Englische Suchbegriffe: für UK-Stellen (Adzuna) und internationale Feeds.
+# Jeder Begriff = eine Suchanfrage pro Ort. Kurz und typisch für Stellentitel halten.
+suchbegriffe_en:
+  - data analyst
+  - data scientist
+  - research analyst
+  - policy analyst
+  - social research
+  - insight analyst
+  - quantitative researcher
+
+# Deutsche Suchbegriffe: für die Jobbörse der Arbeitsagentur.
+suchbegriffe_de:
+  - Data Analyst
+  - Data Science
+  - Sozialforschung
+  - Marktforschung
+  - Datenanalyse
+
+# Breitere Stichwörter, mit denen RSS-Feeds (z. B. PhD-Ausschreibungen) gefiltert werden.
+# Eine Anzeige wird übernommen, wenn eines davon in Titel oder Beschreibung vorkommt.
+fach_stichwoerter:
+  - social science
+  - social data
+  - computational
+  - data science
+  - quantitative
+  - survey
+  - statistics
+  - social policy
+  - sociology
+  - political science
+  - public policy
+  - inequality
+  - Sozialwissenschaft
+  - Soziologie
+  - Politikwissenschaft
+
+# ── UK über Adzuna (kostenloser API-Schlüssel nötig, siehe README) ──
+uk:
+  aktiv: true
+  land: gb
+  orte:
+    - name: London
+      umkreis: 25
+  # Schutz für das begrenzte Gratis-Kontingent von Adzuna
+  max_anfragen_pro_lauf: 20
+
+# ── Deutschland über die Arbeitsagentur (kein Schlüssel nötig) ──
+deutschland:
+  aktiv: true
+  orte:                   # leere Liste [] = deutschlandweit
+    - name: Berlin
+      umkreis: 30         # km, schließt z. B. Potsdam mit ein
+    - name: Hamburg
+      umkreis: 30
+  remote_einbeziehen: false   # true = zusätzlich Homeoffice-Stellen aus ganz Deutschland
+  # Getrennt nach Vollzeit und Teilzeit suchen, damit du auf der Seite danach filtern kannst.
+  # Kostet doppelt so viele (kostenlose) Anfragen; false = schneller, aber ohne diese Angabe.
+  arbeitszeit_unterscheiden: true
+
+jobarten:
+  werkstudent: true
+  praktikum: true
+  einstieg: true
+  phd: true
+
+# Stellen, deren Titel eines dieser Wörter enthält, werden aussortiert
+ausschliessen:
+  - Senior
+  - Lead
+  - Head of
+  - Principal
+  - Director
+  - Manager
+  - Leitung
+  - Leiter
+  - Lecturer
+  - Professor
+  - Ausbildung
+  - Azubi
+  - Duales Studium
+  - Apprentice
+  - Apprenticeship
+
+veroeffentlicht_seit_tagen: 30
+max_seiten_pro_suche: 2
+entfernen_nach_tagen: 3
+
+# RSS-Feeds. "typ" = feste Kategorie für alle Einträge, "auto" = aus dem Titel bestimmen.
+# "nur_mit_suchbegriff: true" filtert nach den fach_stichwoertern oben.
+rss_feeds:
+  - name: DAAD PhDGermany
+    url: https://api.daad.de/api/feeds/rss/en/phd.xml
+    typ: phd
+    land: Deutschland
+    nur_mit_suchbegriff: true
+
+  # jobs.ac.uk (UK-Unis, PhD-Studentships, Research Assistants):
+  # Auf https://www.jobs.ac.uk/feeds/subject-areas/social-sciences-and-social-care
+  # beim gewünschten Fach auf "RSS Feed" rechtsklicken, Link kopieren und hier einfügen.
+  - name: jobs.ac.uk Social Policy
+    url: ""               # ← Link einfügen
+    typ: auto             # Kategorie aus dem Titel (Research Assistant, PhD Studentship …)
+    land: UK
+    nur_mit_suchbegriff: false
+  - name: jobs.ac.uk Sociology
+    url: ""               # ← Link einfügen
+    typ: auto             # Kategorie aus dem Titel (Research Assistant, PhD Studentship …)
+    land: UK
+    nur_mit_suchbegriff: false
