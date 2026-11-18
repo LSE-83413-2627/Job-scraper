@@ -97,17 +97,3 @@ entfernen_nach_tagen: 3
 # RSS-Feeds. "typ" = feste Kategorie für alle Einträge, "auto" = aus dem Titel bestimmen.
 # "nur_mit_suchbegriff: true" filtert nach den fach_stichwoertern oben.
 rss_feeds: []
-
-  # jobs.ac.uk (UK-Unis, PhD-Studentships, Research Assistants):
-  # Auf https://www.jobs.ac.uk/feeds/subject-areas/social-sciences-and-social-care
-  # beim gewünschten Fach auf "RSS Feed" rechtsklicken, Link kopieren und hier einfügen.
-  - name: jobs.ac.uk Social Policy
-    url: ""               # ← Link einfügen
-    typ: auto             # Kategorie aus dem Titel (Research Assistant, PhD Studentship …)
-    land: UK
-    nur_mit_suchbegriff: false
-  - name: jobs.ac.uk Sociology
-    url: ""               # ← Link einfügen
-    typ: auto             # Kategorie aus dem Titel (Research Assistant, PhD Studentship …)
-    land: UK
-    nur_mit_suchbegriff: false
