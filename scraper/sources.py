@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import base64
+import html
 import logging
 import re
 import time
@@ -275,6 +276,96 @@ def hole_ba_beschreibungen(refnrs: list[str], budget: int) -> dict[str, str | No
         time.sleep(PAUSE_SEKUNDEN / 2)
     log.info("Stellenbeschreibungen: %d von %d abgerufen", len(ergebnis), min(len(refnrs), budget))
     return ergebnis
+
+
+# ── service.bund.de: Stellen von Bund, Ländern, Kommunen und vielen Forschungseinrichtungen ──
+BUND_URL = "https://www.service.bund.de/Content/DE/Stellen/Suche/Formular.html"
+BUND_PLZ = {"berlin": "10117 Berlin", "hamburg": "20095 Hamburg", "münchen": "80331 München",
+            "köln": "50667 Köln", "frankfurt": "60311 Frankfurt am Main", "bonn": "53111 Bonn",
+            "leipzig": "04109 Leipzig", "potsdam": "14467 Potsdam"}
+
+
+def _bund_text(beschreibung: str) -> str:
+    """'Arbeitgeber: <strong>X</strong><br /> Ort: <strong>10117 Berlin</strong>' → Klartext, eine Angabe pro Zeile."""
+    t = re.sub(r"<br\s*/?>", "\n", beschreibung or "", flags=re.I)
+    t = re.sub(r"<[^>]+>", "", t)
+    return html.unescape(t)
+
+
+def _bund_feld(text: str, name: str) -> str:
+    m = re.search(rf"{name}\s*:\s*([^\n]+)", text or "", flags=re.I)
+    return m.group(1).strip() if m else ""
+
+
+def _bund_datum(text: str) -> str | None:
+    m = re.search(r"(\d{1,2})\.(\d{1,2})\.(\d{4})", text or "")
+    return f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}" if m else None
+
+
+def hole_bund(cfg: dict) -> list[Rohjob]:
+    bund = cfg.get("bund") or {}
+    de = cfg.get("deutschland") or {}
+    orte = bund.get("orte") or de.get("orte") or [{"name": None}]
+    begriffe = list(dict.fromkeys((cfg.get("suchbegriffe_de") or []) + (bund.get("zusatzbegriffe") or [])))
+    session = requests.Session()
+    jobs: list[Rohjob] = []
+    erfolgreiche = fehler_in_folge = 0
+    letzter_fehler = ""
+
+    for begriff in begriffe:
+        for ort in orte:
+            if fehler_in_folge >= MAX_FEHLER_IN_FOLGE:
+                break
+            params = {"nn": "4641956", "type": "0", "resultsPerPage": "100", "jobsrss": "true",
+                      "templateQueryString": begriff, "sortOrder": "dateOfIssue_dt desc"}
+            name = ort.get("name")
+            if name:
+                params["city_zipcode"] = ort.get("plz_ort") or BUND_PLZ.get(name.lower(), name)
+            try:
+                r = session.get(BUND_URL, params=params, timeout=30,
+                                headers={"User-Agent": BA_HEADERS["User-Agent"]})
+                r.raise_for_status()
+                feed = feedparser.parse(r.content)
+                if feed.bozo and not feed.entries and b"<rss" not in r.content[:500]:
+                    raise QuelleFehlgeschlagen("Antwort ist kein RSS-Feed")
+            except Exception as e:
+                fehler_in_folge += 1
+                letzter_fehler = str(e)
+                log.warning("service.bund.de '%s' (%s) fehlgeschlagen: %s", begriff, name, e)
+                continue
+            erfolgreiche += 1
+            fehler_in_folge = 0
+            for e in feed.entries:
+                link = (e.get("link") or "").split("#")[0].split(";")[0].split("?")[0]
+                if not link:
+                    continue
+                nummer = re.search(r"/(\d+)\.html", link)
+                text = _bund_text(e.get("summary") or e.get("description") or "")
+                datum = time.strftime("%Y-%m-%d", e.published_parsed) if e.get("published_parsed") else None
+                az_text = _bund_feld(text, "Arbeitszeit").lower()
+                zeiten = [z for z, w in (("vollzeit", "vollzeit"), ("teilzeit", "teilzeit")) if w in az_text]
+                jobs.append(Rohjob(
+                    id=f"bund:{nummer.group(1) if nummer else link}",
+                    titel=re.sub(r"\s+", " ", html.unescape(e.get("title") or "")).strip(),
+                    arbeitgeber=_bund_feld(text, "Arbeitgeber") or (e.get("author") or ""),
+                    ort=re.sub(r"^\d{5}\s*", "", _bund_feld(text, "Ort") or _bund_feld(text, "Dienstort") or (name or "")),
+                    url=link,
+                    quelle="service.bund.de",
+                    veroeffentlicht=datum,
+                    land="Deutschland",
+                    suchort=name or "Deutschland",
+                    arbeitszeit=zeiten,
+                    extra={"text": text[:3000], "bund": True,
+                           "frist": _bund_datum(_bund_feld(text, "Bewerbungsfrist"))},
+                ))
+            time.sleep(PAUSE_SEKUNDEN * 1.5)
+
+    log.info("service.bund.de: %d Abfragen erfolgreich, %d Rohtreffer", erfolgreiche, len(jobs))
+    if erfolgreiche == 0:
+        raise QuelleFehlgeschlagen(f"Keine Abfrage erfolgreich, zuletzt: {letzter_fehler}")
+    if fehler_in_folge >= MAX_FEHLER_IN_FOLGE:
+        raise TeilErfolg(jobs, f"Abbruch nach {MAX_FEHLER_IN_FOLGE} Fehlern in Folge: {letzter_fehler}")
+    return jobs
 
 
 ADZUNA_URL = "https://api.adzuna.com/v1/api/jobs/{land}/search/{seite}"

@@ -22,6 +22,7 @@
   --t-einstieg: #7038B5;
   --t-phd: #A8253B;
   --t-trainee: #9A5B00;
+  --t-weitere: #4A5868;
   color-scheme: light;
   box-sizing: border-box;
   padding-top: env(safe-area-inset-top, 0px);
@@ -31,14 +32,14 @@
   :root:not([data-theme="light"]) {
     --paper: #11161C; --surface: #19212A; --ink: #E5EAEF; --muted: #97A3AF;
     --line: #2B3540; --mark: rgba(255, 214, 51, .34); --focus: #8DB2FF;
-    --t-werkstudent: #8DB2FF; --t-praktikum: #5FD3A9; --t-einstieg: #C29BF5; --t-phd: #F28C9D; --t-trainee: #F2B95C;
+    --t-werkstudent: #8DB2FF; --t-praktikum: #5FD3A9; --t-einstieg: #C29BF5; --t-phd: #F28C9D; --t-trainee: #F2B95C; --t-weitere: #AEBBC8;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --paper: #11161C; --surface: #19212A; --ink: #E5EAEF; --muted: #97A3AF;
   --line: #2B3540; --mark: rgba(255, 214, 51, .34); --focus: #8DB2FF;
-  --t-werkstudent: #8DB2FF; --t-praktikum: #5FD3A9; --t-einstieg: #C29BF5; --t-phd: #F28C9D; --t-trainee: #F2B95C;
+  --t-werkstudent: #8DB2FF; --t-praktikum: #5FD3A9; --t-einstieg: #C29BF5; --t-phd: #F28C9D; --t-trainee: #F2B95C; --t-weitere: #AEBBC8;
   color-scheme: dark;
 }
 *, *::before, *::after { box-sizing: inherit; }
@@ -104,6 +105,7 @@ body::before {
 .chip.t-einstieg { --c: var(--t-einstieg); }
 .chip.t-phd { --c: var(--t-phd); }
 .chip.t-trainee { --c: var(--t-trainee); }
+.chip.t-weitere { --c: var(--t-weitere); }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .chip[aria-pressed="true"] { color: #11161C; }
 }
@@ -133,8 +135,10 @@ li.job {
 .typ.t-einstieg { color: var(--t-einstieg); }
 .typ.t-phd { color: var(--t-phd); }
 .typ.t-trainee { color: var(--t-trainee); }
+.typ.t-weitere { color: var(--t-weitere); }
 .side { grid-column: 2; grid-row: 1 / span 2; display: flex; flex-direction: column; align-items: flex-end; gap: .3rem; }
 .age { color: var(--muted); font-size: .85rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.age.bald { color: var(--t-phd); font-weight: 600; }
 .star {
   font: inherit; font-size: .85rem; cursor: pointer; color: var(--muted);
   background: none; border: 1px solid var(--line); border-radius: 6px; padding: .15rem .55rem;
@@ -186,7 +190,9 @@ const TYPEN = {
   einstieg: "Berufseinstieg",
   trainee: "Trainee",
   phd: "PhD / Forschung",
+  weitere: "Weitere Fachstellen",
 };
+const ARBEITGEBER = { forschung: "Forschung & Wissenschaft", oeffentlich: "Öffentlicher Dienst", unternehmen: "Unternehmen & Sonstige" };
 const ZEITEN = { vollzeit: "Vollzeit", teilzeit: "Teilzeit", unbekannt: "Ohne Angabe" };
 const MERK_KEY = "studijobs-gemerkt";
 const FILTER_KEY = "studijobs-filter";
@@ -200,6 +206,7 @@ function regionenVon(j) {
 // Filtergruppen: innerhalb einer Gruppe ODER, zwischen Gruppen UND
 const GRUPPEN = [
   { key: "typ", label: "Jobart", werte: j => [j.typ], optionen: TYPEN, klasse: k => "t-" + k },
+  { key: "arbeitgeber", label: "Arbeitgeber", werte: j => j.arbeitgeber_typ || ["unternehmen"], optionen: ARBEITGEBER },
   { key: "zeit", label: "Arbeitszeit", werte: j => (j.arbeitszeit && j.arbeitszeit.length ? j.arbeitszeit : ["unbekannt"]), optionen: ZEITEN },
   { key: "region", label: "Region", werte: regionenVon, optionen: null },
 ];
@@ -230,7 +237,7 @@ function filterSpeichern() {
   for (const j of DATEN.jobs) for (const r of regionenVon(j)) if (!alle.includes(r)) alle.push(r);
   const hinten = ["Remote", "Weitere Orte"];
   const vorne = alle.filter(r => !hinten.includes(r)).sort((a, b) => a.localeCompare(b, "de"));
-  GRUPPEN[2].optionen = Object.fromEntries([...vorne, ...hinten.filter(r => alle.includes(r))].map(r => [r, r]));
+  GRUPPEN.find(g => g.key === "region").optionen = Object.fromEntries([...vorne, ...hinten.filter(r => alle.includes(r))].map(r => [r, r]));
   // Gespeicherte Auswahl, die es nicht mehr gibt, verwerfen
   for (const g of GRUPPEN) for (const k of [...state.auswahl[g.key]]) if (!(k in g.optionen)) state.auswahl[g.key].delete(k);
 })();
@@ -243,6 +250,15 @@ function alterText(datum, heute) {
   if (d <= 0) return "heute online";
   if (d === 1) return "seit gestern";
   return `seit ${d} Tagen`;
+}
+
+function fristText(frist, heute) {
+  if (!frist) return "";
+  const d = tageZwischen(heute, frist);
+  const datum = new Date(frist).toLocaleDateString("de-DE", { day: "numeric", month: "short" });
+  if (d <= 0) return "Frist heute";
+  if (d <= 7) return `Frist in ${d} ${d === 1 ? "Tag" : "Tagen"}`;
+  return `Bewerbung bis ${datum}`;
 }
 
 function gruppe(job, heute) {
@@ -380,6 +396,7 @@ function renderListe() {
         </div>
         <div class="side">
           <span class="age">${alterText(j.veroeffentlicht, DATEN.heute)}</span>
+          ${j.frist ? `<span class="age${tageZwischen(DATEN.heute, j.frist) <= 7 ? " bald" : ""}">${fristText(j.frist, DATEN.heute)}</span>` : ""}
           <button class="star" type="button" aria-pressed="${gemerkt}">${gemerkt ? "Gemerkt" : "Merken"}</button>
         </div>`;
       li.querySelector(".star").addEventListener("click", () => {

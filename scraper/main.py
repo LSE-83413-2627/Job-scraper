@@ -81,6 +81,53 @@ def passt_fach_text(text: str, cfg: dict) -> bool:
     return any(re.search(rf"(?<![a-zäöüß]){re.escape(_norm(w))}", t) for w in woerter)
 
 
+# Arbeitgeber-Typ für den Filter "Arbeitgeber"
+FORSCHUNG = [
+    r"institut", r"leibniz", r"max[- ]planck", r"helmholtz", r"fraunhofer", r"universit",
+    r"hochschule", r"\bfh\b", r"forschung", r"wissenschaftszentrum", r"\bwzb\b", r"\bdiw\b",
+    r"\bzew\b", r"\bifo\b", r"\biab\b", r"gesis", r"\bdzhw\b", r"\bgiga\b", r"\bhwwi\b",
+    r"\bdeutsches zentrum\b", r"akademie der wissenschaften", r"research", r"charit[ée]",
+    r"\brki\b", r"robert koch", r"\bbibb\b", r"\bdji\b", r"thünen", r"\bbaua\b",
+]
+OEFFENTLICH = [
+    r"\bbundes", r"\bbund\b", r"ministerium", r"senatsverwaltung", r"\bsenat\b", r"behörde",
+    r"statistisches", r"amt für statistik", r"statistikamt", r"destatis", r"landesamt", r"bezirksamt",
+    r"freie und hansestadt", r"\bland berlin\b", r"rentenversicherung", r"bundesagentur", r"bundesbank",
+    r"\bbamf\b", r"\bbbsr\b", r"\bbsi\b", r"\bbva\b", r"stadtverwaltung", r"landeshauptstadt",
+    r"\bamt\b", r"\bämter\b", r"kommunal", r"öffentlich-rechtlich", r"körperschaft des öffentlichen",
+    r"anstalt des öffentlichen",
+]
+
+
+def arbeitgeber_typ(job: dict) -> list[str]:
+    name = _norm(job.get("arbeitgeber", ""))
+    typen = []
+    if any(re.search(m, name) for m in FORSCHUNG) or job.get("typ") == "phd":
+        typen.append("forschung")
+    if any(re.search(m, name) for m in OEFFENTLICH):
+        typen.append("oeffentlich")
+    if not typen and job.get("quelle") == "service.bund.de":
+        typen.append("oeffentlich")
+    return typen or ["unternehmen"]
+
+
+# service.bund.de durchsucht den ganzen Anzeigentext. Damit nicht jede Stelle, in der irgendwo
+# "Statistik" vorkommt, durchrutscht, muss der Titel einen Fachbezug haben.
+BUND_TITEL_STICHWOERTER = [
+    "daten", "data", "statistik", "statistisch", "analys", "analyt", "empiri", "evaluation",
+    "monitoring", "befragung", "survey", "sozialwissenschaft", "sozialforschung", "sozialstatistik",
+    "sozialberichterstattung", "sozialpolitik", "soziolog", "politikwissenschaft", "politikberatung",
+    "demogra", "ökonometr", "quantitativ", "methoden", "bildungsforschung", "arbeitsmarkt",
+    "wirtschaftsforschung", "research", "wirkung", "indikator", "berichterstattung",
+]
+
+
+def passt_bund_titel(titel: str, cfg: dict) -> bool:
+    woerter = (cfg.get("bund") or {}).get("titel_stichwoerter") or BUND_TITEL_STICHWOERTER
+    t = _norm(titel)
+    return any(_norm(w) in t for w in woerter)
+
+
 def ist_einstieg(beschreibung: str) -> bool:
     text = _norm(beschreibung)
     if not text:
@@ -88,6 +135,10 @@ def ist_einstieg(beschreibung: str) -> bool:
     ja = any(re.search(m, text) for m in EINSTIEG_JA)
     nein = any(re.search(m, text) for m in EINSTIEG_NEIN)
     return ja and not nein
+
+
+def heute_iso() -> str:
+    return datetime.now(timezone.utc).astimezone(ZEITZONE).date().isoformat()
 
 
 def lade_config() -> dict:
@@ -115,12 +166,25 @@ def kategorisiere(job: sources.Rohjob, einstieg_ids: set[str] = frozenset()) -> 
         return job.typ_hinweis
     if job.id in einstieg_ids:
         return "einstieg"
+    if job.extra.get("bund"):
+        # Öffentlicher Dienst nennt selten ein Level im Titel ("Referent:in Statistik").
+        # Die Suche lief über deine Fachbegriffe, daher als eigene Kategorie zeigen.
+        return "einstieg" if ist_einstieg(job.extra.get("text", "")) else "weitere"
     return None
 
 
 def ist_ausgeschlossen(titel: str, ausschluss: list[str]) -> bool:
     t = _norm(titel)
-    return any(re.search(rf"(?<![a-zäöüß]){re.escape(w.lower())}(?![a-zäöüß])", t) for w in ausschluss)
+    for w in ausschluss:
+        w = w.lower()
+        if w in ("leitung", "leiter", "leiterin"):
+            # Auch Zusammensetzungen wie "Referatsleitung" oder "Teamleiter",
+            # aber nicht "Begleitung" (z. B. "Wissenschaftliche Begleitung")
+            if re.search(r"(?<!beg)leit(ung|er|erin)(?![a-zäöüß])", t):
+                return True
+        elif re.search(rf"(?<![a-zäöüß]){re.escape(w)}(?![a-zäöüß])", t):
+            return True
+    return False
 
 
 def passt_zum_fach(job: sources.Rohjob, begriffe: list[str]) -> bool:
@@ -148,6 +212,8 @@ def filtern(rohjobs: list[sources.Rohjob], cfg: dict, einstieg_ids: set[str] = f
     aktiv = {k for k, v in (cfg.get("jobarten") or {}).items() if v}
     if sources.trainee_aktiv(cfg):
         aktiv.add("trainee")
+    if (cfg.get("bund") or {}).get("aktiv", True):
+        aktiv.add("weitere")
     ausschluss = cfg.get("ausschliessen") or []
     fachbegriffe = (cfg.get("fach_stichwoerter") or
                     (cfg.get("suchbegriffe_de") or []) + (cfg.get("suchbegriffe_en") or []))
@@ -161,6 +227,10 @@ def filtern(rohjobs: list[sources.Rohjob], cfg: dict, einstieg_ids: set[str] = f
             continue
         if j.extra.get("nur_mit_suchbegriff") and not passt_zum_fach(j, fachbegriffe):
             continue
+        if j.extra.get("bund") and not passt_bund_titel(j.titel, cfg):
+            continue
+        if j.extra.get("frist") and j.extra["frist"] < heute_iso():
+            continue  # Bewerbungsfrist abgelaufen
         typ = kategorisiere(j, einstieg_ids)
         if typ not in aktiv:
             continue
@@ -186,6 +256,7 @@ def filtern(rohjobs: list[sources.Rohjob], cfg: dict, einstieg_ids: set[str] = f
             "regionen": [j.suchort] if j.suchort else [],
             "arbeitszeit": zeiten,
             "veroeffentlicht": j.veroeffentlicht,
+            "frist": j.extra.get("frist"),
         }
     return ergebnis
 
@@ -253,6 +324,8 @@ def zusammenfuehren(alt: dict[str, dict], neu: dict[str, dict],
         # So verschwindet bei einem Ausfall nicht plötzlich alles.
         if job["quelle"] in ok_quellen and job.get("zuletzt_gesehen", heute) < grenze:
             continue
+        if job.get("frist") and job["frist"] < heute:
+            continue
         bestand[jid] = job
     for jid, job in neu.items():
         vorher = alt.get(jid, {})
@@ -310,6 +383,9 @@ def main() -> int:
     if (cfg.get("deutschland") or {}).get("aktiv", True):
         abrufen("Arbeitsagentur", sources.hole_arbeitsagentur, cfg)
 
+    if (cfg.get("bund") or {}).get("aktiv", True):
+        abrufen("service.bund.de", sources.hole_bund, cfg)
+
     if (cfg.get("uk") or {}).get("aktiv"):
         app_id, app_key = os.environ.get("ADZUNA_APP_ID"), os.environ.get("ADZUNA_APP_KEY")
         if app_id and app_key:
@@ -327,6 +403,9 @@ def main() -> int:
     if DATEN.exists():
         alt = {j["id"]: j for j in json.loads(DATEN.read_text(encoding="utf-8"))}
     bestand = zusammenfuehren(alt, neu, ok_quellen, cfg, heute)
+
+    for job in bestand.values():
+        job["arbeitgeber_typ"] = arbeitgeber_typ(job)
 
     DATEN.parent.mkdir(parents=True, exist_ok=True)
     DATEN.write_text(json.dumps(list(bestand.values()), ensure_ascii=False, indent=1), encoding="utf-8")
