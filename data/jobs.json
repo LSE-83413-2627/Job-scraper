@@ -18,7 +18,10 @@
   ],
   "veroeffentlicht": "2026-11-13",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-18",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:12122-981457259-S",
@@ -38,7 +41,10 @@
   ],
   "veroeffentlicht": "2026-11-05",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-18",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:20390-JR0088730-S",
@@ -58,7 +64,10 @@
   ],
   "veroeffentlicht": "2026-11-16",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-18",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:13334-00005f6724e001-S",
@@ -77,8 +86,12 @@
    "teilzeit"
   ],
   "veroeffentlicht": "2026-11-16",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:10001-1003925631-S",
@@ -97,8 +110,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-10-28",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:12288-4996082313-S",
@@ -117,8 +134,36 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-12",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
+ },
+ {
+  "id": "ba:12122-984823891-S",
+  "titel": "Datenassistent (m/w/d)",
+  "arbeitgeber": "persona service AG & Co.KG Niederlassung Chemnitz-Nord",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12122-984823891-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-19",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-19",
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:12288-4996073275-S",
@@ -137,8 +182,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-12",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
  },
  {
   "id": "ba:19209-44581242-1118-S",
@@ -158,8 +207,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-19",
+  "frist": null,
   "zuerst_gesehen": "2026-11-19",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
  },
  {
   "id": "ba:10001-1003999289-S",
@@ -178,8 +231,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-11",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
  },
  {
   "id": "ba:10001-1004031064-S",
@@ -198,8 +255,12 @@
    "teilzeit"
   ],
   "veroeffentlicht": "2026-11-18",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
  },
  {
   "id": "ba:10001-1003946281-S",
@@ -218,8 +279,13 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-12",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "forschung",
+   "oeffentlich"
+  ]
  },
  {
   "id": "ba:10001-1003948907-S",
@@ -238,8 +304,13 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-12",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "forschung",
+   "oeffentlich"
+  ]
  },
  {
   "id": "ba:10001-1003932851-S",
@@ -258,8 +329,12 @@
    "teilzeit"
   ],
   "veroeffentlicht": "2026-10-29",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
  },
  {
   "id": "ba:20965-2371020-S",
@@ -278,8 +353,12 @@
    "teilzeit"
   ],
   "veroeffentlicht": "2026-11-05",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:12465-1646596-1-S",
@@ -298,8 +377,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-16",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:12462-1649681-1-S",
@@ -318,8 +401,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-11",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:10001-1003913492-S",
@@ -338,8 +425,12 @@
    "teilzeit"
   ],
   "veroeffentlicht": "2026-10-26",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:13348-1651695-1-S",
@@ -358,8 +449,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-09",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:13348-1651694-1-S",
@@ -378,8 +473,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-09",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:10001-1003914948-S",
@@ -398,8 +497,12 @@
    "teilzeit"
   ],
   "veroeffentlicht": "2026-10-26",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:15794-471863_50541-1-S",
@@ -418,8 +521,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-11",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:15794-471862_50565-1-S",
@@ -438,8 +545,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-17",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:10001-1003901051-S",
@@ -458,8 +569,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-10-22",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:17031-00024402b7a001-S",
@@ -478,8 +593,12 @@
    "teilzeit"
   ],
   "veroeffentlicht": "2026-11-05",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
  },
  {
   "id": "ba:17031-00024402b7f001-S",
@@ -498,8 +617,12 @@
    "teilzeit"
   ],
   "veroeffentlicht": "2026-10-22",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
  },
  {
   "id": "ba:10001-1003940378-S",
@@ -518,8 +641,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-10-30",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:10001-1003964383-S",
@@ -538,8 +665,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-10",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:10001-1003964360-S",
@@ -558,8 +689,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-10",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:10001-1003990884-S",
@@ -578,8 +713,12 @@
    "teilzeit"
   ],
   "veroeffentlicht": "2026-11-10",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
  },
  {
   "id": "ba:16729-2026-725-S",
@@ -599,8 +738,13 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-18",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "forschung",
+   "oeffentlich"
+  ]
  },
  {
   "id": "ba:20536-feya4nhfug-S",
@@ -619,8 +763,37 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-16",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
+ },
+ {
+  "id": "ba:12456-1598208-3-S",
+  "titel": "Referent:in strategische Beschaffung",
+  "arbeitgeber": "Deutsche Bahn AG",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12456-1598208-3-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit",
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-19",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-19",
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:19146-100016203049-S",
@@ -639,8 +812,12 @@
    "teilzeit"
   ],
   "veroeffentlicht": "2026-11-19",
+  "frist": null,
   "zuerst_gesehen": "2026-11-19",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:12513-0007660724-S",
@@ -660,8 +837,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-10-30",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:20279-k62365.1111-S",
@@ -680,8 +861,12 @@
    "teilzeit"
   ],
   "veroeffentlicht": "2026-11-09",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:10001-1003976655-S",
@@ -701,8 +886,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-06",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:10001-1003964713-S",
@@ -721,8 +910,12 @@
    "teilzeit"
   ],
   "veroeffentlicht": "2026-11-04",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:13509-000021116b4001-S",
@@ -741,8 +934,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-02",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:10001-1003896377-S",
@@ -761,8 +958,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-10-22",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:13348-1651478-1-S",
@@ -781,8 +982,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-06",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:13348-1651693-1-S",
@@ -801,8 +1006,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-06",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:13151-1648451-1-S",
@@ -821,8 +1030,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-11",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:10001-1003998273-S",
@@ -842,8 +1055,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-11",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:10001-1003950433-S",
@@ -863,8 +1080,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-03",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:12265-522826_JB5285692-S",
@@ -883,8 +1104,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-10-30",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:13032-DP78CO2MDAFTOJND-S",
@@ -903,8 +1128,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-10-25",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:18989-891233324-S",
@@ -923,8 +1152,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-18",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:10001-1003967804-S",
@@ -944,8 +1177,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-05",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:13644-304837-S",
@@ -965,8 +1202,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-18",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:18989-984541861-S",
@@ -985,8 +1226,12 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-18",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
  },
  {
   "id": "ba:15794-471864_50564-1-S",
@@ -1005,7 +1250,55 @@
    "vollzeit"
   ],
   "veroeffentlicht": "2026-11-17",
+  "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-19"
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "bund:6714965",
+  "titel": "Referent/Referentin (m/w/d) Forschungsdatenzentrum",
+  "arbeitgeber": "Deutsche Gesetzliche Unfallversicherung e.V. (DGUV)",
+  "ort": "Berlin",
+  "url": "https://www.service.bund.de/IMPORTE/Stellenangebote/editor/Deutsche-Gesetzliche-Unfallversicherung/2026/11/6714965.html",
+  "quelle": "service.bund.de",
+  "typ": "weitere",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [],
+  "veroeffentlicht": "2026-11-17",
+  "frist": "2026-12-16",
+  "zuerst_gesehen": "2026-11-19",
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "oeffentlich"
+  ]
+ },
+ {
+  "id": "bund:1511950",
+  "titel": "Mitarbeiter/-in Büroorganisation und Statistikkommunikation (w/m/d) im Referat B14",
+  "arbeitgeber": "Statistisches Bundesamt (Destatis)",
+  "ort": "Berlin",
+  "url": "https://www.service.bund.de/IMPORTE/Stellenangebote/interamt/2026/11/1511950.html",
+  "quelle": "service.bund.de",
+  "typ": "weitere",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [],
+  "veroeffentlicht": "2026-11-12",
+  "frist": "2026-11-26",
+  "zuerst_gesehen": "2026-11-19",
+  "zuletzt_gesehen": "2026-11-19",
+  "arbeitgeber_typ": [
+   "oeffentlich"
+  ]
  }
 ]
