@@ -21,86 +21,6 @@
   "zuletzt_gesehen": "2026-11-18"
  },
  {
-  "id": "ba:13334-00005f6724e001-S",
-  "titel": "Werkstudent:in Data & Analytics (m/w/d)",
-  "arbeitgeber": "EDEKA IT Stiftung & Co. OHG",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13334-00005f6724e001-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "werkstudent",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "teilzeit"
-  ],
-  "veroeffentlicht": "2026-11-16",
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
- },
- {
-  "id": "ba:10001-1003925631-S",
-  "titel": "(Junior) Data Analyst mit Schwerpunkt militärische Luftfahrzeuge (m/w/d)",
-  "arbeitgeber": "IABG Industrieanlagen Betriebs-GmbH",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003925631-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "einstieg",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-10-28",
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
- },
- {
-  "id": "ba:12288-4996082313-S",
-  "titel": "Doktorand Predictive Analytics als Analyst / Consultant (w|m|d) | findic",
-  "arbeitgeber": "findic",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996082313-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-12",
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
- },
- {
-  "id": "ba:12288-4996073275-S",
-  "titel": "Doktorand Graph Intelligence & Agentic Graph RAG als Analyst / Consultant (w|m|d) | findic",
-  "arbeitgeber": "findic",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996073275-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-12",
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
- },
- {
   "id": "ba:12122-981457259-S",
   "titel": "Datenassistent (m/w/d)",
   "arbeitgeber": "persona service AG & Co.KG Niederlassung Chemnitz-Nord",
@@ -141,6 +61,107 @@
   "zuletzt_gesehen": "2026-11-18"
  },
  {
+  "id": "ba:13334-00005f6724e001-S",
+  "titel": "Werkstudent:in Data & Analytics (m/w/d)",
+  "arbeitgeber": "EDEKA IT Stiftung & Co. OHG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13334-00005f6724e001-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "werkstudent",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "teilzeit"
+  ],
+  "veroeffentlicht": "2026-11-16",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-19"
+ },
+ {
+  "id": "ba:10001-1003925631-S",
+  "titel": "(Junior) Data Analyst mit Schwerpunkt militärische Luftfahrzeuge (m/w/d)",
+  "arbeitgeber": "IABG Industrieanlagen Betriebs-GmbH",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003925631-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-10-28",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-19"
+ },
+ {
+  "id": "ba:12288-4996082313-S",
+  "titel": "Doktorand Predictive Analytics als Analyst / Consultant (w|m|d) | findic",
+  "arbeitgeber": "findic",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996082313-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-12",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-19"
+ },
+ {
+  "id": "ba:12288-4996073275-S",
+  "titel": "Doktorand Graph Intelligence & Agentic Graph RAG als Analyst / Consultant (w|m|d) | findic",
+  "arbeitgeber": "findic",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996073275-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-12",
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-19"
+ },
+ {
+  "id": "ba:19209-44581242-1118-S",
+  "titel": "Postdoctoral Researcher in Mechanobiology & Digital Twins",
+  "arbeitgeber": "Helmholtz-Zentrum hereon GmbH",
+  "ort": "Teltow (Brandenburg)",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/19209-44581242-1118-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit",
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-19",
+  "zuerst_gesehen": "2026-11-19",
+  "zuletzt_gesehen": "2026-11-19"
+ },
+ {
   "id": "ba:10001-1003999289-S",
   "titel": "1 Doktorand*in (m/w/d)",
   "arbeitgeber": "Deutsches Institut für Ernährungsforschung Stiftung des öffentl.Rechts",
@@ -158,7 +179,7 @@
   ],
   "veroeffentlicht": "2026-11-11",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1004031064-S",
@@ -178,7 +199,7 @@
   ],
   "veroeffentlicht": "2026-11-18",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003946281-S",
@@ -198,7 +219,7 @@
   ],
   "veroeffentlicht": "2026-11-12",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003948907-S",
@@ -218,7 +239,7 @@
   ],
   "veroeffentlicht": "2026-11-12",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003932851-S",
@@ -238,7 +259,7 @@
   ],
   "veroeffentlicht": "2026-10-29",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:20965-2371020-S",
@@ -258,7 +279,7 @@
   ],
   "veroeffentlicht": "2026-11-05",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:12465-1646596-1-S",
@@ -278,7 +299,7 @@
   ],
   "veroeffentlicht": "2026-11-16",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:12462-1649681-1-S",
@@ -298,7 +319,7 @@
   ],
   "veroeffentlicht": "2026-11-11",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003913492-S",
@@ -318,7 +339,7 @@
   ],
   "veroeffentlicht": "2026-10-26",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:13348-1651695-1-S",
@@ -338,7 +359,7 @@
   ],
   "veroeffentlicht": "2026-11-09",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:13348-1651694-1-S",
@@ -358,7 +379,7 @@
   ],
   "veroeffentlicht": "2026-11-09",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003914948-S",
@@ -378,7 +399,7 @@
   ],
   "veroeffentlicht": "2026-10-26",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:15794-471863_50541-1-S",
@@ -398,7 +419,7 @@
   ],
   "veroeffentlicht": "2026-11-11",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:15794-471862_50565-1-S",
@@ -418,7 +439,7 @@
   ],
   "veroeffentlicht": "2026-11-17",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003901051-S",
@@ -438,7 +459,7 @@
   ],
   "veroeffentlicht": "2026-10-22",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:17031-00024402b7a001-S",
@@ -458,7 +479,7 @@
   ],
   "veroeffentlicht": "2026-11-05",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:17031-00024402b7f001-S",
@@ -478,7 +499,7 @@
   ],
   "veroeffentlicht": "2026-10-22",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003940378-S",
@@ -498,7 +519,7 @@
   ],
   "veroeffentlicht": "2026-10-30",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003964383-S",
@@ -518,7 +539,7 @@
   ],
   "veroeffentlicht": "2026-11-10",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003964360-S",
@@ -538,7 +559,7 @@
   ],
   "veroeffentlicht": "2026-11-10",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003990884-S",
@@ -558,7 +579,7 @@
   ],
   "veroeffentlicht": "2026-11-10",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:16729-2026-725-S",
@@ -579,7 +600,7 @@
   ],
   "veroeffentlicht": "2026-11-18",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:20536-feya4nhfug-S",
@@ -599,7 +620,27 @@
   ],
   "veroeffentlicht": "2026-11-16",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
+ },
+ {
+  "id": "ba:19146-100016203049-S",
+  "titel": "Marktforschung in Teilzeit - Wiedereinstieg möglich (m/w/d), Potsdam oder remote",
+  "arbeitgeber": "K&T Wetterdaten GmbH",
+  "ort": "Potsdam (Brandenburg)",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/19146-100016203049-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit"
+  ],
+  "veroeffentlicht": "2026-11-19",
+  "zuerst_gesehen": "2026-11-19",
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:12513-0007660724-S",
@@ -620,7 +661,7 @@
   ],
   "veroeffentlicht": "2026-10-30",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:20279-k62365.1111-S",
@@ -640,7 +681,7 @@
   ],
   "veroeffentlicht": "2026-11-09",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003976655-S",
@@ -661,7 +702,7 @@
   ],
   "veroeffentlicht": "2026-11-06",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003964713-S",
@@ -681,7 +722,7 @@
   ],
   "veroeffentlicht": "2026-11-04",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:13509-000021116b4001-S",
@@ -701,7 +742,7 @@
   ],
   "veroeffentlicht": "2026-11-02",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003896377-S",
@@ -721,7 +762,7 @@
   ],
   "veroeffentlicht": "2026-10-22",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:13348-1651478-1-S",
@@ -741,7 +782,7 @@
   ],
   "veroeffentlicht": "2026-11-06",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:13348-1651693-1-S",
@@ -761,7 +802,7 @@
   ],
   "veroeffentlicht": "2026-11-06",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:13151-1648451-1-S",
@@ -781,7 +822,7 @@
   ],
   "veroeffentlicht": "2026-11-11",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003998273-S",
@@ -802,7 +843,7 @@
   ],
   "veroeffentlicht": "2026-11-11",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003950433-S",
@@ -823,7 +864,7 @@
   ],
   "veroeffentlicht": "2026-11-03",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:12265-522826_JB5285692-S",
@@ -843,7 +884,7 @@
   ],
   "veroeffentlicht": "2026-10-30",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:13032-DP78CO2MDAFTOJND-S",
@@ -863,7 +904,7 @@
   ],
   "veroeffentlicht": "2026-10-25",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:18989-891233324-S",
@@ -883,7 +924,7 @@
   ],
   "veroeffentlicht": "2026-11-18",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:10001-1003967804-S",
@@ -904,7 +945,7 @@
   ],
   "veroeffentlicht": "2026-11-05",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:13644-304837-S",
@@ -925,7 +966,7 @@
   ],
   "veroeffentlicht": "2026-11-18",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:18989-984541861-S",
@@ -945,7 +986,7 @@
   ],
   "veroeffentlicht": "2026-11-18",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  },
  {
   "id": "ba:15794-471864_50564-1-S",
@@ -965,6 +1006,6 @@
   ],
   "veroeffentlicht": "2026-11-17",
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-18"
+  "zuletzt_gesehen": "2026-11-19"
  }
 ]
