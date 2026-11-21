@@ -30,7 +30,8 @@ log = logging.getLogger("studijobs")
 KATEGORIEN = [
     ("phd", [r"doktorand", r"\bph\.?d\b", r"promotionsstelle", r"zur promotion", r"\(promotion",
              r"promovierend", r"doctoral", r"doctorate", r"studentship",
-             r"wissenschaftliche\S* mitarbeit", r"research (assistant|officer)",
+             r"wissenschaftliche\S* (mitarbeit|hilfskraft)", r"research (assistant|officer|associate)",
+             r"doctoral researcher", r"phd researcher", r"\bwhk\b",
              r"predoc", r"pre-doc"]),
     ("werkstudent", [r"werkstudent", r"working student", r"studentische\S* (hilfskraft|aushilfe|mitarbeit)",
                      r"student assistant", r"studentenjob", r"\bshk\b", r"part[- ]time student",
@@ -122,6 +123,45 @@ BUND_TITEL_STICHWOERTER = [
 ]
 
 
+# Sozial- und wirtschaftswissenschaftliche Leibniz-Institute: deren Stellen werden alle geprüft.
+# Bei anderen Instituten (und bei Max Planck) muss der Titel bzw. Text zum Profil passen.
+FORSCHUNG_INSTITUTE = [
+    r"\bwzb\b", r"wissenschaftszentrum berlin", r"\bdiw\b", r"wirtschaftsforschung", r"economic research",
+    r"\bgesis\b", r"sozialwissenschaften", r"social sciences", r"\bzew\b", r"weltwirtschaft",
+    r"kiel institute", r"\bifo\b", r"\biwh\b", r"\bgiga\b", r"global and area studies",
+    r"hans-bredow", r"medienforschung", r"media research", r"\bdipf\b", r"bildungsforschung",
+    r"bildungsverläufe", r"\blifbi\b", r"educational", r"erwachsenenbildung", r"adult education",
+    r"\(die\)", r"raumbezogene sozialforschung", r"society and space", r"\birs\b", r"\bprif\b",
+    r"friedens", r"peace research", r"\bzpid\b", r"psycholog", r"\bbips\b", r"epidemiolog",
+    r"\bzbw\b", r"informationszentrum wirtschaft", r"information centre for economics",
+    r"\bsafe\b", r"financial research", r"finanzmarktforschung", r"leibniz-gemeinschaft",
+    r"leibniz association", r"\bios\b", r"ost- und südosteuropa",
+]
+FORSCHUNG_STICHWOERTER = [
+    "social science", "sozialwissenschaft", "sociolog", "soziolog", "political science",
+    "politikwissenschaft", "public policy", "policy", "economics", "ökonom", "volkswirtschaft",
+    "demograph", "demograf", "survey", "befragung", "inequality", "ungleichheit", "migration",
+    "labour market", "labor market", "arbeitsmarkt", "education research", "educational",
+    "bildungsforschung", "computational social", "social data", "population", "bevölkerung",
+    "governance", "sozialforschung", "human development", "democracy", "demokratie",
+    "public opinion", "social network", "panel study", "panel data", "data science",
+]
+
+
+def forschung_relevant(job: sources.Rohjob, cfg: dict) -> bool:
+    fcfg = cfg.get("forschung") or {}
+    art = job.extra.get("forschung")
+    if art == "seite":
+        return True  # selbst ausgewählte Institute
+    if art == "leibniz":
+        muster = fcfg.get("institute") or FORSCHUNG_INSTITUTE
+        if any(re.search(m, _norm(job.arbeitgeber)) for m in muster):
+            return True
+    woerter = fcfg.get("stichwoerter") or FORSCHUNG_STICHWOERTER
+    text = _norm(job.titel + " " + (job.extra.get("text", "") if art == "mpg" else ""))
+    return any(_norm(w) in text for w in woerter)
+
+
 def passt_bund_titel(titel: str, cfg: dict) -> bool:
     woerter = (cfg.get("bund") or {}).get("titel_stichwoerter") or BUND_TITEL_STICHWOERTER
     t = _norm(titel)
@@ -170,11 +210,21 @@ def kategorisiere(job: sources.Rohjob, einstieg_ids: set[str] = frozenset()) -> 
         # Öffentlicher Dienst nennt selten ein Level im Titel ("Referent:in Statistik").
         # Die Suche lief über deine Fachbegriffe, daher als eigene Kategorie zeigen.
         return "einstieg" if ist_einstieg(job.extra.get("text", "")) else "weitere"
+    if job.extra.get("forschung"):
+        return "weitere" if passt_bund_titel(job.titel, {}) else None
     return None
+
+
+# Immer aussortiert: Stellen, die eine Promotion voraussetzen oder Leitungsebene sind
+IMMER_AUSSCHLIESSEN = [r"post-?doc", r"postdoctoral", r"professur", r"professorship", r"professor",
+                       r"\bw[123]\b", r"habilitation", r"group leader", r"gruppenleit", r"senior scientist",
+                       r"senior research", r"direktor", r"director"]
 
 
 def ist_ausgeschlossen(titel: str, ausschluss: list[str]) -> bool:
     t = _norm(titel)
+    if any(re.search(m, t) for m in IMMER_AUSSCHLIESSEN):
+        return True
     for w in ausschluss:
         w = w.lower()
         if w in ("leitung", "leiter", "leiterin"):
@@ -190,6 +240,13 @@ def ist_ausgeschlossen(titel: str, ausschluss: list[str]) -> bool:
 def passt_zum_fach(job: sources.Rohjob, begriffe: list[str]) -> bool:
     text = _norm(job.titel + " " + job.extra.get("text", ""))
     return any(_norm(b) in text for b in begriffe)
+
+
+def kuerzel(name: str) -> set[str]:
+    """Abkürzungen im Arbeitgebernamen, z. B. {"WZB"} oder {"DIW"}, um dieselbe Stelle
+    aus verschiedenen Quellen zu erkennen."""
+    return {w.upper() for w in re.findall(r"\b[A-ZÄÖÜ][A-Za-zÄÖÜ]{1,6}\b", name or "")
+            if sum(c.isupper() for c in w) >= 2}
 
 
 def arbeitszeit_bestimmen(job: sources.Rohjob, typ: str) -> list[str]:
@@ -212,13 +269,14 @@ def filtern(rohjobs: list[sources.Rohjob], cfg: dict, einstieg_ids: set[str] = f
     aktiv = {k for k, v in (cfg.get("jobarten") or {}).items() if v}
     if sources.trainee_aktiv(cfg):
         aktiv.add("trainee")
-    if (cfg.get("bund") or {}).get("aktiv", True):
+    if (cfg.get("bund") or {}).get("aktiv", True) or (cfg.get("forschung") or {}).get("aktiv", True):
         aktiv.add("weitere")
     ausschluss = cfg.get("ausschliessen") or []
     fachbegriffe = (cfg.get("fach_stichwoerter") or
                     (cfg.get("suchbegriffe_de") or []) + (cfg.get("suchbegriffe_en") or []))
     ergebnis: dict[str, dict] = {}
     id_fuer_schluessel: dict[tuple, str] = {}
+    ids_fuer_titel: dict[str, list[str]] = {}
 
     for j in rohjobs:
         if not j.titel or not j.url:
@@ -228,6 +286,8 @@ def filtern(rohjobs: list[sources.Rohjob], cfg: dict, einstieg_ids: set[str] = f
         if j.extra.get("nur_mit_suchbegriff") and not passt_zum_fach(j, fachbegriffe):
             continue
         if j.extra.get("bund") and not passt_bund_titel(j.titel, cfg):
+            continue
+        if j.extra.get("forschung") and not forschung_relevant(j, cfg):
             continue
         if j.extra.get("frist") and j.extra["frist"] < heute_iso():
             continue  # Bewerbungsfrist abgelaufen
@@ -243,6 +303,14 @@ def filtern(rohjobs: list[sources.Rohjob], cfg: dict, einstieg_ids: set[str] = f
         # Stadt und Remote) oder mehrfach eingestellt sein: dann Angaben zusammenführen.
         schluessel = (_norm(j.titel), _norm(j.arbeitgeber), _norm(j.ort))
         vorhanden = ergebnis.get(j.id) or ergebnis.get(id_fuer_schluessel.get(schluessel, ""))
+        if not vorhanden:
+            # Gleicher Titel aus einer anderen Quelle, gleicher Arbeitgeber (per Abkürzung erkannt)
+            for anderer in ids_fuer_titel.get(_norm(j.titel), []):
+                o = ergebnis[anderer]
+                if o["quelle"] != j.quelle and (kuerzel(o["arbeitgeber"]) & kuerzel(j.arbeitgeber)
+                                                or _norm(o["arbeitgeber"]) == _norm(j.arbeitgeber)):
+                    vorhanden = o
+                    break
         if vorhanden:
             vorhanden["arbeitszeit"] = sorted(set(vorhanden["arbeitszeit"]) | set(zeiten))
             vorhanden["remote"] = vorhanden["remote"] or j.remote
@@ -250,6 +318,7 @@ def filtern(rohjobs: list[sources.Rohjob], cfg: dict, einstieg_ids: set[str] = f
                 vorhanden["regionen"].append(j.suchort)
             continue
         id_fuer_schluessel[schluessel] = j.id
+        ids_fuer_titel.setdefault(_norm(j.titel), []).append(j.id)
         ergebnis[j.id] = {
             "id": j.id, "titel": j.titel, "arbeitgeber": j.arbeitgeber, "ort": j.ort,
             "url": j.url, "quelle": j.quelle, "typ": typ, "remote": j.remote, "land": j.land,
@@ -385,6 +454,16 @@ def main() -> int:
 
     if (cfg.get("bund") or {}).get("aktiv", True):
         abrufen("service.bund.de", sources.hole_bund, cfg)
+
+    fcfg = cfg.get("forschung") or {}
+    if fcfg.get("aktiv", True):
+        if fcfg.get("leibniz", True):
+            abrufen("Leibniz-Stellenportal", sources.hole_leibniz, cfg)
+        if fcfg.get("max_planck", True):
+            abrufen("Max-Planck-Gesellschaft", sources.hole_mpg, cfg)
+        for seite in fcfg.get("karriereseiten") or []:
+            if seite.get("url"):
+                abrufen(seite["name"], sources.hole_karriereseite, seite, cfg)
 
     if (cfg.get("uk") or {}).get("aktiv"):
         app_id, app_key = os.environ.get("ADZUNA_APP_ID"), os.environ.get("ADZUNA_APP_KEY")

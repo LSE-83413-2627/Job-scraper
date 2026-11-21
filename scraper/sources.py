@@ -7,7 +7,9 @@ import html
 import logging
 import re
 import time
+import urllib.robotparser
 from dataclasses import dataclass, field
+from urllib.parse import urljoin, urlparse
 
 import feedparser
 import requests
@@ -365,6 +367,134 @@ def hole_bund(cfg: dict) -> list[Rohjob]:
         raise QuelleFehlgeschlagen(f"Keine Abfrage erfolgreich, zuletzt: {letzter_fehler}")
     if fehler_in_folge >= MAX_FEHLER_IN_FOLGE:
         raise TeilErfolg(jobs, f"Abbruch nach {MAX_FEHLER_IN_FOLGE} Fehlern in Folge: {letzter_fehler}")
+    return jobs
+
+
+# ── Forschungseinrichtungen ──────────────────────────────────────────────
+LEIBNIZ_URL = "https://www.leibniz-gemeinschaft.de/karriere/stellenportal"
+MPG_RSS = "https://www.mpg.de/feeds/jobs.rss"
+_robots_cache: dict[str, urllib.robotparser.RobotFileParser | None] = {}
+
+
+def darf_abrufen(url: str) -> bool:
+    """Respektiert die robots.txt der jeweiligen Seite."""
+    teile = urlparse(url)
+    basis = f"{teile.scheme}://{teile.netloc}"
+    if basis not in _robots_cache:
+        rp = urllib.robotparser.RobotFileParser()
+        try:
+            r = requests.get(basis + "/robots.txt", timeout=15,
+                             headers={"User-Agent": BA_HEADERS["User-Agent"]})
+            rp.parse(r.text.splitlines() if r.status_code == 200 else [])
+            _robots_cache[basis] = rp
+        except Exception:
+            _robots_cache[basis] = None  # nicht erreichbar: wie "keine Einschränkung"
+    rp = _robots_cache[basis]
+    return True if rp is None else rp.can_fetch(BA_HEADERS["User-Agent"], url)
+
+
+def _klartext(fragment: str) -> str:
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", fragment or ""))).strip()
+
+
+def _region_aus_text(text: str, cfg: dict) -> str:
+    orte = [o["name"] for o in ((cfg.get("deutschland") or {}).get("orte") or []) if o.get("name")]
+    t = (text or "").lower()
+    for ort in orte:
+        if ort.lower() in t:
+            return ort
+    return ""
+
+
+def hole_leibniz(cfg: dict) -> list[Rohjob]:
+    if not darf_abrufen(LEIBNIZ_URL):
+        raise QuelleFehlgeschlagen("robots.txt erlaubt den Abruf nicht")
+    r = requests.get(LEIBNIZ_URL, timeout=30, headers={"User-Agent": BA_HEADERS["User-Agent"]})
+    r.raise_for_status()
+    seite = r.text
+    # Jede Stelle: <a href=".../detail/job/show/Job/<slug>">Titel</a>, danach der Institutsname
+    treffer = list(re.finditer(r'<a[^>]+href="([^"]*/detail/job/show/Job/[^"]+)"[^>]*>(.*?)</a>', seite, flags=re.S))
+    jobs = []
+    for i, m in enumerate(treffer):
+        ende = treffer[i + 1].start() if i + 1 < len(treffer) else m.end() + 2000
+        rest = seite[m.end():ende]
+        rest = rest.split("</li>")[0]
+        institut = _klartext(rest)
+        titel = _klartext(m.group(2))
+        if not titel:
+            continue
+        url = urljoin(LEIBNIZ_URL, html.unescape(m.group(1)))
+        slug = url.rstrip("/").rsplit("/", 1)[-1]
+        ort = institut.rsplit(",", 1)[1].strip() if "," in institut else ""
+        jobs.append(Rohjob(
+            id=f"leibniz:{slug}", titel=titel, arbeitgeber=institut, ort=ort, url=url,
+            quelle="Leibniz-Stellenportal", land="Deutschland",
+            suchort=_region_aus_text(institut + " " + titel, cfg) or "Weitere Orte",
+            extra={"forschung": "leibniz", "text": institut},
+        ))
+    log.info("Leibniz-Stellenportal: %d Stellen", len(jobs))
+    if not jobs:
+        raise QuelleFehlgeschlagen("Keine Stellen gefunden – hat sich der Seitenaufbau geändert?")
+    return jobs
+
+
+def hole_mpg(cfg: dict) -> list[Rohjob]:
+    if not darf_abrufen(MPG_RSS):
+        raise QuelleFehlgeschlagen("robots.txt erlaubt den Abruf nicht")
+    r = requests.get(MPG_RSS, timeout=30, headers={"User-Agent": BA_HEADERS["User-Agent"]})
+    r.raise_for_status()
+    feed = feedparser.parse(r.content)
+    jobs = []
+    for e in feed.entries:
+        link = (e.get("link") or "").split("?")[0]
+        nummer = re.search(r"mpg\.de/(\d+)/", link)
+        titel = _klartext(e.get("title") or "")
+        text = _klartext(e.get("summary") or "")
+        datum = time.strftime("%Y-%m-%d", e.published_parsed) if e.get("published_parsed") else None
+        institut = re.search(r"Max Planck Institute (?:for|of) [A-Z][\w\s,&-]{3,80}?(?= in |[.,(]|$)", text)
+        jobs.append(Rohjob(
+            id=f"mpg:{nummer.group(1) if nummer else link}", titel=titel,
+            arbeitgeber=institut.group(0).strip() if institut else "Max-Planck-Gesellschaft",
+            ort="", url=link, quelle="Max-Planck-Gesellschaft", veroeffentlicht=datum, land="Deutschland",
+            suchort=_region_aus_text(text, cfg) or "Weitere Orte",
+            extra={"forschung": "mpg", "text": text[:3000]},
+        ))
+    log.info("Max-Planck-Gesellschaft: %d Stellen", len(jobs))
+    return jobs
+
+
+# Linktexte, die nach einer Stellenanzeige aussehen
+_STELLEN_LINK = re.compile(
+    r"\((?:[mwfdx]|div|all)[^)]{0,12}\)|m/w/d|w/m/d|f/m/d|m/f/d|all genders|alle geschlechter|"
+    r"mitarbeiter|hilfskraft|doktorand|phd|praktik|werkstudent|trainee|referent|research|analyst|"
+    r"wissenschaftlich|student", re.I)
+
+
+def hole_karriereseite(seite: dict, cfg: dict) -> list[Rohjob]:
+    """Allgemeiner Abruf einer Karriereseite: sammelt Links, deren Text wie eine Stelle aussieht."""
+    url = seite["url"]
+    if not darf_abrufen(url):
+        raise QuelleFehlgeschlagen("robots.txt erlaubt den Abruf nicht")
+    r = requests.get(url, timeout=30, headers={"User-Agent": BA_HEADERS["User-Agent"]})
+    r.raise_for_status()
+    jobs, gesehen = [], set()
+    ort = seite.get("ort", "")
+    region = _region_aus_text(ort, cfg) or "Weitere Orte"
+    for m in re.finditer(r'<a[^>]+href="([^"#][^"]*)"[^>]*>(.*?)</a>', r.text, flags=re.S | re.I):
+        titel = _klartext(m.group(2))
+        if not (12 <= len(titel) <= 220) or not _STELLEN_LINK.search(titel):
+            continue
+        link = urljoin(url, html.unescape(m.group(1)))
+        if link in gesehen or link.rstrip("/") == url.rstrip("/") or link.startswith("mailto:"):
+            continue
+        gesehen.add(link)
+        jobs.append(Rohjob(
+            id=f"seite:{seite['name']}:{base64.urlsafe_b64encode(link.encode()).decode()[:48]}",
+            titel=titel, arbeitgeber=seite.get("arbeitgeber") or seite["name"], ort=ort, url=link,
+            quelle=seite["name"], land="Deutschland", suchort=region,
+            extra={"forschung": "seite", "text": ""},
+        ))
+    log.info("Karriereseite %s: %d mögliche Stellen", seite["name"], len(jobs))
     return jobs
 
 
