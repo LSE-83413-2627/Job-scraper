@@ -1,7 +1,7 @@
 {
  "studiengang": "Applied Social Data Science",
- "aktualisiert": "2026-11-20T15:03+01:00",
- "heute": "2026-11-20",
+ "aktualisiert": "2026-11-21T14:29+01:00",
+ "heute": "2026-11-21",
  "quellen": {
   "Arbeitsagentur": "ok",
   "service.bund.de": "ok"
@@ -26,7 +26,7 @@
    "veroeffentlicht": "2026-11-20",
    "frist": null,
    "zuerst_gesehen": "2026-11-20",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -51,83 +51,9 @@
    "veroeffentlicht": "2026-11-20",
    "frist": null,
    "zuerst_gesehen": "2026-11-20",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "forschung"
-   ]
-  },
-  {
-   "id": "ba:12122-984823891-S",
-   "titel": "Datenassistent (m/w/d)",
-   "arbeitgeber": "persona service AG & Co.KG Niederlassung Chemnitz-Nord",
-   "ort": "Berlin",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12122-984823891-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "einstieg",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-19",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-20",
-   "arbeitgeber_typ": [
-    "unternehmen"
-   ]
-  },
-  {
-   "id": "ba:19209-44581242-1118-S",
-   "titel": "Postdoctoral Researcher in Mechanobiology & Digital Twins",
-   "arbeitgeber": "Helmholtz-Zentrum hereon GmbH",
-   "ort": "Teltow (Brandenburg)",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/19209-44581242-1118-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "phd",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "teilzeit",
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-19",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-20",
-   "arbeitgeber_typ": [
-    "forschung"
-   ]
-  },
-  {
-   "id": "ba:12456-1598208-3-S",
-   "titel": "Referent:in strategische Beschaffung",
-   "arbeitgeber": "Deutsche Bahn AG",
-   "ort": "Berlin",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12456-1598208-3-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "einstieg",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "teilzeit",
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-19",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-20",
-   "arbeitgeber_typ": [
-    "unternehmen"
    ]
   },
   {
@@ -155,6 +81,80 @@
    ]
   },
   {
+   "id": "ba:12122-984823891-S",
+   "titel": "Datenassistent (m/w/d)",
+   "arbeitgeber": "persona service AG & Co.KG Niederlassung Chemnitz-Nord",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12122-984823891-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "einstieg",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-19",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-19",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
+   "id": "ba:19209-44581242-1118-S",
+   "titel": "Postdoctoral Researcher in Mechanobiology & Digital Twins",
+   "arbeitgeber": "Helmholtz-Zentrum hereon GmbH",
+   "ort": "Teltow (Brandenburg)",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/19209-44581242-1118-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "phd",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "teilzeit",
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-19",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-19",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
+  {
+   "id": "ba:12456-1598208-3-S",
+   "titel": "Referent:in strategische Beschaffung",
+   "arbeitgeber": "Deutsche Bahn AG",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12456-1598208-3-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "einstieg",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "teilzeit",
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-19",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-19",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
    "id": "bund:6714965",
    "titel": "Referent/Referentin (m/w/d) Forschungsdatenzentrum",
    "arbeitgeber": "Deutsche Gesetzliche Unfallversicherung e.V. (DGUV)",
@@ -171,7 +171,7 @@
    "veroeffentlicht": "2026-11-17",
    "frist": "2026-12-16",
    "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "oeffentlich"
    ]
@@ -193,7 +193,7 @@
    "veroeffentlicht": "2026-11-12",
    "frist": "2026-11-26",
    "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "oeffentlich"
    ]
@@ -217,7 +217,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -242,7 +242,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "forschung",
     "oeffentlich"
@@ -267,7 +267,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -292,7 +292,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -316,7 +316,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -340,7 +340,7 @@
    "veroeffentlicht": "2026-11-17",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -364,7 +364,7 @@
    "veroeffentlicht": "2026-11-17",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -435,7 +435,7 @@
    "veroeffentlicht": "2026-11-16",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -459,7 +459,7 @@
    "veroeffentlicht": "2026-11-16",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -507,7 +507,7 @@
    "veroeffentlicht": "2026-11-12",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -531,7 +531,7 @@
    "veroeffentlicht": "2026-11-12",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -555,7 +555,7 @@
    "veroeffentlicht": "2026-11-12",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "forschung",
     "oeffentlich"
@@ -580,7 +580,7 @@
    "veroeffentlicht": "2026-11-12",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "forschung",
     "oeffentlich"
@@ -605,7 +605,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -629,7 +629,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -653,7 +653,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -677,7 +677,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -702,7 +702,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -726,7 +726,7 @@
    "veroeffentlicht": "2026-11-10",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -750,7 +750,7 @@
    "veroeffentlicht": "2026-11-10",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -774,7 +774,7 @@
    "veroeffentlicht": "2026-11-10",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -798,7 +798,7 @@
    "veroeffentlicht": "2026-11-09",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -822,7 +822,7 @@
    "veroeffentlicht": "2026-11-09",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -846,7 +846,7 @@
    "veroeffentlicht": "2026-11-09",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -871,7 +871,7 @@
    "veroeffentlicht": "2026-11-06",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -895,7 +895,7 @@
    "veroeffentlicht": "2026-11-06",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -919,7 +919,7 @@
    "veroeffentlicht": "2026-11-06",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -966,7 +966,7 @@
    "veroeffentlicht": "2026-11-05",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -990,7 +990,7 @@
    "veroeffentlicht": "2026-11-05",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1015,7 +1015,7 @@
    "veroeffentlicht": "2026-11-05",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1039,7 +1039,7 @@
    "veroeffentlicht": "2026-11-04",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1064,7 +1064,7 @@
    "veroeffentlicht": "2026-11-03",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1088,7 +1088,7 @@
    "veroeffentlicht": "2026-11-02",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1112,7 +1112,7 @@
    "veroeffentlicht": "2026-10-30",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1137,7 +1137,7 @@
    "veroeffentlicht": "2026-10-30",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1161,7 +1161,7 @@
    "veroeffentlicht": "2026-10-30",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1185,7 +1185,7 @@
    "veroeffentlicht": "2026-10-29",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1209,7 +1209,7 @@
    "veroeffentlicht": "2026-10-28",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1233,7 +1233,7 @@
    "veroeffentlicht": "2026-10-26",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1257,7 +1257,7 @@
    "veroeffentlicht": "2026-10-26",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1281,7 +1281,7 @@
    "veroeffentlicht": "2026-10-25",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-20",
+   "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
