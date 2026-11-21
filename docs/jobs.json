@@ -1,12 +1,293 @@
 {
  "studiengang": "Applied Social Data Science",
- "aktualisiert": "2026-11-21T14:29+01:00",
+ "aktualisiert": "2026-11-21T16:12+01:00",
  "heute": "2026-11-21",
  "quellen": {
   "Arbeitsagentur": "ok",
-  "service.bund.de": "ok"
+  "service.bund.de": "ok",
+  "Leibniz-Stellenportal": "ok",
+  "Max-Planck-Gesellschaft": "ok",
+  "DeZIM": "ok"
  },
  "jobs": [
+  {
+   "id": "ba:20536-a08kfz1iqv-S",
+   "titel": "Research Associate (m/f/d) at the Institute of Medical Technol...",
+   "arbeitgeber": "Technische Universität Hamburg",
+   "ort": "Hamburg",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20536-a08kfz1iqv-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "phd",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Hamburg"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-10-30",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-21",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
+  {
+   "id": "mpg:27057336",
+   "titel": "PhD Student (m/f/d) | Community ecology, stone tool use and social behavior in gracile capuchin monkeys",
+   "arbeitgeber": "Max-Planck-Gesellschaft",
+   "ort": "",
+   "url": "https://www.mpg.de/27057336/phd-student-m-f-d-community-ecology-stone-tool-use-and-social-behavior-in-gracile-capuchin-monkeys",
+   "quelle": "Max-Planck-Gesellschaft",
+   "typ": "phd",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Weitere Orte"
+   ],
+   "arbeitszeit": [],
+   "veroeffentlicht": "2026-10-23",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-21",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
+  {
+   "id": "leibniz:wissenschaftlicher-mitarbeiterin-wmdiv-fuer-die-forschungsbasierte-infrastruktureinrichtung-sozio-oekonomische-panel-soep",
+   "titel": "Wissenschaftliche*r Mitarbeiter*in (w/m/div) für die forschungsbasierte Infrastruktureinrichtung Sozio-oekonomische Panel (SOEP)",
+   "arbeitgeber": "DIW Berlin - Deutsches Institut für Wirtschaftsforschung (DIW) <!--",
+   "ort": "",
+   "url": "https://www.leibniz-gemeinschaft.de/karriere/stellenportal/detail/job/show/Job/wissenschaftlicher-mitarbeiterin-wmdiv-fuer-die-forschungsbasierte-infrastruktureinrichtung-sozio-oekonomische-panel-soep",
+   "quelle": "Leibniz-Stellenportal",
+   "typ": "phd",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [],
+   "veroeffentlicht": null,
+   "frist": null,
+   "zuerst_gesehen": "2026-11-21",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
+  {
+   "id": "leibniz:studentischer-mitarbeiterin-digitalisierung-mwd",
+   "titel": "Studentische*r Mitarbeiter*in Digitalisierung (m/w/d)",
+   "arbeitgeber": "Wissenschaftszentrum Berlin für Sozialforschung (WZB) <!--",
+   "ort": "",
+   "url": "https://www.leibniz-gemeinschaft.de/karriere/stellenportal/detail/job/show/Job/studentischer-mitarbeiterin-digitalisierung-mwd",
+   "quelle": "Leibniz-Stellenportal",
+   "typ": "werkstudent",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "teilzeit"
+   ],
+   "veroeffentlicht": null,
+   "frist": null,
+   "zuerst_gesehen": "2026-11-21",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
+  {
+   "id": "leibniz:studentische-hilfskraft-mwd-als-unterstuetzung-von-forschungsprojekten-zur-geschichte-von-wirtschaftspolitik-unternehmen-und-moralischer-oekonomie",
+   "titel": "Studentische Hilfskraft (m/w/d) als Unterstützung von Forschungsprojekten zur Geschichte von Wirtschaftspolitik, Unternehmen und moralischer Ökonomie",
+   "arbeitgeber": "Leibniz-Zentrum für Zeithistorische Forschung Potsdam (ZZF) <!--",
+   "ort": "",
+   "url": "https://www.leibniz-gemeinschaft.de/karriere/stellenportal/detail/job/show/Job/studentische-hilfskraft-mwd-als-unterstuetzung-von-forschungsprojekten-zur-geschichte-von-wirtschaftspolitik-unternehmen-und-moralischer-oekonomie",
+   "quelle": "Leibniz-Stellenportal",
+   "typ": "werkstudent",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Weitere Orte"
+   ],
+   "arbeitszeit": [
+    "teilzeit"
+   ],
+   "veroeffentlicht": null,
+   "frist": null,
+   "zuerst_gesehen": "2026-11-21",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
+  {
+   "id": "leibniz:studentische-hilfskraft-wmd-fuer-das-justiziariat-des-ifo-instituts",
+   "titel": "Studentische Hilfskraft (w/m/d) für das Justiziariat des ifo Instituts",
+   "arbeitgeber": "ifo Institut Leibniz-Institut für Wirtschaftsforschung an der Universität München e. V. (ifo) <!--",
+   "ort": "",
+   "url": "https://www.leibniz-gemeinschaft.de/karriere/stellenportal/detail/job/show/Job/studentische-hilfskraft-wmd-fuer-das-justiziariat-des-ifo-instituts",
+   "quelle": "Leibniz-Stellenportal",
+   "typ": "werkstudent",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Weitere Orte"
+   ],
+   "arbeitszeit": [
+    "teilzeit"
+   ],
+   "veroeffentlicht": null,
+   "frist": null,
+   "zuerst_gesehen": "2026-11-21",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
+  {
+   "id": "leibniz:fachreferentindatenanalystin-wmd-fuer-konjunktur-und-befragungen-fuer-den-bereich-ifo-zentrum-fuer-makrooekonomik-und-befragungen",
+   "titel": "Fachreferent*in/Datenanalyst*in (w/m/d) für Konjunktur und Befragungen für den Bereich ifo Zentrum für Makroökonomik und Befragungen",
+   "arbeitgeber": "ifo Institut Leibniz-Institut für Wirtschaftsforschung an der Universität München e. V. (ifo) <!--",
+   "ort": "",
+   "url": "https://www.leibniz-gemeinschaft.de/karriere/stellenportal/detail/job/show/Job/fachreferentindatenanalystin-wmd-fuer-konjunktur-und-befragungen-fuer-den-bereich-ifo-zentrum-fuer-makrooekonomik-und-befragungen",
+   "quelle": "Leibniz-Stellenportal",
+   "typ": "weitere",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Weitere Orte"
+   ],
+   "arbeitszeit": [],
+   "veroeffentlicht": null,
+   "frist": null,
+   "zuerst_gesehen": "2026-11-21",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
+  {
+   "id": "leibniz:bibliothekarin-meta-datenmanagement",
+   "titel": "Bibliothekar:in (Meta-)Datenmanagement",
+   "arbeitgeber": "ZBW – Leibniz-Informationszentrum Wirtschaft, Kiel <!--",
+   "ort": "Kiel <!--",
+   "url": "https://www.leibniz-gemeinschaft.de/karriere/stellenportal/detail/job/show/Job/bibliothekarin-meta-datenmanagement",
+   "quelle": "Leibniz-Stellenportal",
+   "typ": "weitere",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Weitere Orte"
+   ],
+   "arbeitszeit": [],
+   "veroeffentlicht": null,
+   "frist": null,
+   "zuerst_gesehen": "2026-11-21",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
+  {
+   "id": "leibniz:studentische-hilfskraft-wmd-fuer-den-service-und-forschungsbereich-forschungsdatenmanagement-fdm-der-abteilung-forschungsinfrastruktur-fi",
+   "titel": "Studentische Hilfskraft (w/m/d) für den Service- und Forschungsbereich Forschungsdatenmanagement (FDM) der Abteilung Forschungsinfrastruktur (FI)",
+   "arbeitgeber": "DIW Berlin - Deutsches Institut für Wirtschaftsforschung (DIW) <!--",
+   "ort": "",
+   "url": "https://www.leibniz-gemeinschaft.de/karriere/stellenportal/detail/job/show/Job/studentische-hilfskraft-wmd-fuer-den-service-und-forschungsbereich-forschungsdatenmanagement-fdm-der-abteilung-forschungsinfrastruktur-fi",
+   "quelle": "Leibniz-Stellenportal",
+   "typ": "werkstudent",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "teilzeit"
+   ],
+   "veroeffentlicht": null,
+   "frist": null,
+   "zuerst_gesehen": "2026-11-21",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
+  {
+   "id": "leibniz:wissenschaftliche-studentische-hilfskraft-mwdiv-emmy-noether-nachwuchsforschungsgruppe-grenzen-und-gedaechtnis",
+   "titel": "Wissenschaftliche / studentische Hilfskraft (m/w/div) Emmy Noether Nachwuchsforschungsgruppe „Grenzen und Gedächtnis“",
+   "arbeitgeber": "Leibniz-Institut für Raumbezogene Sozialforschung (IRS), Erkner <!--",
+   "ort": "Erkner <!--",
+   "url": "https://www.leibniz-gemeinschaft.de/karriere/stellenportal/detail/job/show/Job/wissenschaftliche-studentische-hilfskraft-mwdiv-emmy-noether-nachwuchsforschungsgruppe-grenzen-und-gedaechtnis",
+   "quelle": "Leibniz-Stellenportal",
+   "typ": "werkstudent",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Weitere Orte"
+   ],
+   "arbeitszeit": [
+    "teilzeit"
+   ],
+   "veroeffentlicht": null,
+   "frist": null,
+   "zuerst_gesehen": "2026-11-21",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
+  {
+   "id": "leibniz:doktorandin-wmd-in-der-dfg-forschungsgruppe-jenseits-des-wahnsinns-nutzenanalyse-von-verschwoerungstheorien",
+   "titel": "Doktorand/in (w/m/d) in der DFG-Forschungsgruppe „Jenseits des Wahnsinns: Nutzenanalyse von Verschwörungstheorien“",
+   "arbeitgeber": "Leibniz-Institut für Psychologie (ZPID), Trier <!--",
+   "ort": "Trier <!--",
+   "url": "https://www.leibniz-gemeinschaft.de/karriere/stellenportal/detail/job/show/Job/doktorandin-wmd-in-der-dfg-forschungsgruppe-jenseits-des-wahnsinns-nutzenanalyse-von-verschwoerungstheorien",
+   "quelle": "Leibniz-Stellenportal",
+   "typ": "phd",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Weitere Orte"
+   ],
+   "arbeitszeit": [],
+   "veroeffentlicht": null,
+   "frist": null,
+   "zuerst_gesehen": "2026-11-21",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
+  {
+   "id": "seite:DeZIM:aHR0cHM6Ly93d3cuZGV6aW0taW5zdGl0dXQuZGUvam9icy9z",
+   "titel": "Studentische Mitarbeiter*innen (m/w/d/k.A.)",
+   "arbeitgeber": "Deutsches Zentrum für Integrations- und Migrationsforschung (DeZIM)",
+   "ort": "Berlin",
+   "url": "https://www.dezim-institut.de/jobs/studentische-mitarbeiterinnen-m-w-d-ka/",
+   "quelle": "DeZIM",
+   "typ": "werkstudent",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "teilzeit"
+   ],
+   "veroeffentlicht": null,
+   "frist": null,
+   "zuerst_gesehen": "2026-11-21",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
   {
    "id": "ba:13348-1656246-1-S",
    "titel": "Internship Digitization & Process Optimization",
@@ -81,30 +362,6 @@
    ]
   },
   {
-   "id": "ba:12122-984823891-S",
-   "titel": "Datenassistent (m/w/d)",
-   "arbeitgeber": "persona service AG & Co.KG Niederlassung Chemnitz-Nord",
-   "ort": "Berlin",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12122-984823891-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "einstieg",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-19",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-21",
-   "arbeitgeber_typ": [
-    "unternehmen"
-   ]
-  },
-  {
    "id": "ba:19209-44581242-1118-S",
    "titel": "Postdoctoral Researcher in Mechanobiology & Digital Twins",
    "arbeitgeber": "Helmholtz-Zentrum hereon GmbH",
@@ -127,6 +384,30 @@
    "zuletzt_gesehen": "2026-11-21",
    "arbeitgeber_typ": [
     "forschung"
+   ]
+  },
+  {
+   "id": "ba:12122-984823891-S",
+   "titel": "Datenassistent (m/w/d)",
+   "arbeitgeber": "persona service AG & Co.KG Niederlassung Chemnitz-Nord",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12122-984823891-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "einstieg",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-19",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-19",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "unternehmen"
    ]
   },
   {
@@ -489,54 +770,6 @@
    ]
   },
   {
-   "id": "ba:12288-4996082313-S",
-   "titel": "Doktorand Predictive Analytics als Analyst / Consultant (w|m|d) | findic",
-   "arbeitgeber": "findic",
-   "ort": "Berlin",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996082313-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "phd",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-12",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-21",
-   "arbeitgeber_typ": [
-    "forschung"
-   ]
-  },
-  {
-   "id": "ba:12288-4996073275-S",
-   "titel": "Doktorand Graph Intelligence & Agentic Graph RAG als Analyst / Consultant (w|m|d) | findic",
-   "arbeitgeber": "findic",
-   "ort": "Berlin",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996073275-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "phd",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-12",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-21",
-   "arbeitgeber_typ": [
-    "forschung"
-   ]
-  },
-  {
    "id": "ba:10001-1003946281-S",
    "titel": "– Postdoc – Wissenschaftliche/-r Mitarbeiter/-in (m/w/d) in der Professur für Data Engineering",
    "arbeitgeber": "Helmut-Schmidt-Universität Universität der Bundeswehr Personaldezernat",
@@ -584,6 +817,54 @@
    "arbeitgeber_typ": [
     "forschung",
     "oeffentlich"
+   ]
+  },
+  {
+   "id": "ba:12288-4996082313-S",
+   "titel": "Doktorand Predictive Analytics als Analyst / Consultant (w|m|d) | findic",
+   "arbeitgeber": "findic",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996082313-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "phd",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-12",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-18",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
+   ]
+  },
+  {
+   "id": "ba:12288-4996073275-S",
+   "titel": "Doktorand Graph Intelligence & Agentic Graph RAG als Analyst / Consultant (w|m|d) | findic",
+   "arbeitgeber": "findic",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996073275-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "phd",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-12",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-18",
+   "zuletzt_gesehen": "2026-11-21",
+   "arbeitgeber_typ": [
+    "forschung"
    ]
   },
   {
