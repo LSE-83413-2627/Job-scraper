@@ -1,7 +1,7 @@
 {
  "studiengang": "Applied Social Data Science",
- "aktualisiert": "2026-11-23T17:00+01:00",
- "heute": "2026-11-23",
+ "aktualisiert": "2026-11-24T16:55+01:00",
+ "heute": "2026-11-24",
  "quellen": {
   "Arbeitsagentur": "ok",
   "service.bund.de": "ok",
@@ -10,6 +10,79 @@
   "DeZIM": "ok"
  },
  "jobs": [
+  {
+   "id": "ba:13348-1657222-1-S",
+   "titel": "Praktikum im Bereich Prozess / Data Analyst und Logistik",
+   "arbeitgeber": "Lufthansa Technik AG",
+   "ort": "Hamburg",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1657222-1-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "praktikum",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Hamburg"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-24",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-24",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
+   "id": "ba:12265-522826_JB5304976-S",
+   "titel": "Qualitätsingenieur Luftfahrt (m/w/d) | AIRBUS | 18 Monate befristet, Option auf Verlängerung",
+   "arbeitgeber": "FERCHAU GmbH Niederlassung Hamburg-City",
+   "ort": "Hamburg",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12265-522826_JB5304976-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "einstieg",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Hamburg"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-24",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-24",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
+   "id": "ba:10001-1004061101-S",
+   "titel": "Trainee IT Consulting w/m/d - Security",
+   "arbeitgeber": "Computacenter AG & Co. oHG",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004061101-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "trainee",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin",
+    "Hamburg"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-24",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-24",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
   {
    "id": "ba:13348-1657028-1-S",
    "titel": "Praktikum im Bereich Airline-Logistik bei der Lufthansa Group",
@@ -29,151 +102,7 @@
    "veroeffentlicht": "2026-11-23",
    "frist": null,
    "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-23",
-   "arbeitgeber_typ": [
-    "unternehmen"
-   ]
-  },
-  {
-   "id": "ba:18989-984542724-S",
-   "titel": "Praktikum Data Analytics Global Transformation Tax (w/m/d)",
-   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
-   "ort": "Berlin",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984542724-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "praktikum",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-18",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-23",
-   "arbeitgeber_typ": [
-    "unternehmen"
-   ]
-  },
-  {
-   "id": "ba:18989-984547821-S",
-   "titel": "Praktikum energiewirtschaftliche Prüfung und Beratung (w/m/d)",
-   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
-   "ort": "Berlin",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984547821-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "praktikum",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-18",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-23",
-   "arbeitgeber_typ": [
-    "unternehmen"
-   ]
-  },
-  {
-   "id": "ba:18989-984542892-S",
-   "titel": "Praktikum Data Analytics Global Transformation Tax (w/m/d)",
-   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
-   "ort": "Hamburg",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984542892-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "praktikum",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Hamburg"
-   ],
-   "arbeitszeit": [
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-18",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-23",
-   "arbeitgeber_typ": [
-    "unternehmen"
-   ]
-  },
-  {
-   "id": "ba:18989-984548682-S",
-   "titel": "Praktikum Forensic - Data Analytics (w/m/d)",
-   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
-   "ort": "Berlin",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548682-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "praktikum",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-18",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-23",
-   "arbeitgeber_typ": [
-    "unternehmen"
-   ]
-  },
-  {
-   "id": "ba:18989-984548703-S",
-   "titel": "Praktikum - Digital Forensic und eDiscovery (w/m/d)",
-   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
-   "ort": "Berlin",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548703-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "praktikum",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-18",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-23",
-   "arbeitgeber_typ": [
-    "unternehmen"
-   ]
-  },
-  {
-   "id": "ba:18989-984548745-S",
-   "titel": "Technology Consultant - Financial Services (w/m/d)",
-   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
-   "ort": "Berlin",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548745-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "einstieg",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-18",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -203,6 +132,150 @@
    ]
   },
   {
+   "id": "ba:18989-984542724-S",
+   "titel": "Praktikum Data Analytics Global Transformation Tax (w/m/d)",
+   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984542724-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "praktikum",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-18",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
+   "id": "ba:18989-984547821-S",
+   "titel": "Praktikum energiewirtschaftliche Prüfung und Beratung (w/m/d)",
+   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984547821-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "praktikum",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-18",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
+   "id": "ba:18989-984542892-S",
+   "titel": "Praktikum Data Analytics Global Transformation Tax (w/m/d)",
+   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+   "ort": "Hamburg",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984542892-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "praktikum",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Hamburg"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-18",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
+   "id": "ba:18989-984548682-S",
+   "titel": "Praktikum Forensic - Data Analytics (w/m/d)",
+   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548682-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "praktikum",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-18",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
+   "id": "ba:18989-984548703-S",
+   "titel": "Praktikum - Digital Forensic und eDiscovery (w/m/d)",
+   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548703-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "praktikum",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-18",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
+   "id": "ba:18989-984548745-S",
+   "titel": "Technology Consultant - Financial Services (w/m/d)",
+   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548745-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "einstieg",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-18",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
    "id": "ba:18989-984548766-S",
    "titel": "Technology Consultant - Financial Services (w/m/d)",
    "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
@@ -221,7 +294,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -245,7 +318,7 @@
    "veroeffentlicht": "2026-10-30",
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -267,7 +340,7 @@
    "veroeffentlicht": "2026-10-23",
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -289,7 +362,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -313,7 +386,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -337,7 +410,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -361,7 +434,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -383,7 +456,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -405,7 +478,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -429,7 +502,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -453,7 +526,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -475,7 +548,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -499,7 +572,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -523,7 +596,7 @@
    "veroeffentlicht": "2026-11-20",
    "frist": null,
    "zuerst_gesehen": "2026-11-20",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -548,33 +621,9 @@
    "veroeffentlicht": "2026-11-20",
    "frist": null,
    "zuerst_gesehen": "2026-11-20",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
-   ]
-  },
-  {
-   "id": "ba:19146-100016203049-S",
-   "titel": "Marktforschung in Teilzeit - Wiedereinstieg möglich (m/w/d), Potsdam oder remote",
-   "arbeitgeber": "K&T Wetterdaten GmbH",
-   "ort": "Potsdam (Brandenburg)",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/19146-100016203049-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "einstieg",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "teilzeit"
-   ],
-   "veroeffentlicht": "2026-11-19",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-20",
-   "arbeitgeber_typ": [
-    "unternehmen"
    ]
   },
   {
@@ -621,7 +670,7 @@
    "veroeffentlicht": "2026-11-19",
    "frist": null,
    "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -646,7 +695,7 @@
    "veroeffentlicht": "2026-11-19",
    "frist": null,
    "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -668,7 +717,7 @@
    "veroeffentlicht": "2026-11-17",
    "frist": "2026-12-16",
    "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "oeffentlich"
    ]
@@ -690,7 +739,7 @@
    "veroeffentlicht": "2026-11-12",
    "frist": "2026-11-26",
    "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "oeffentlich"
    ]
@@ -714,7 +763,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -739,7 +788,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung",
     "oeffentlich"
@@ -764,7 +813,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -789,7 +838,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -813,7 +862,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -837,7 +886,7 @@
    "veroeffentlicht": "2026-11-17",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -861,7 +910,7 @@
    "veroeffentlicht": "2026-11-17",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -885,7 +934,7 @@
    "veroeffentlicht": "2026-11-16",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -909,7 +958,7 @@
    "veroeffentlicht": "2026-11-16",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -983,7 +1032,7 @@
    "veroeffentlicht": "2026-11-12",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1007,7 +1056,7 @@
    "veroeffentlicht": "2026-11-12",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1031,7 +1080,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1055,7 +1104,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1079,7 +1128,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1103,7 +1152,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1128,7 +1177,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1152,7 +1201,7 @@
    "veroeffentlicht": "2026-11-10",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1176,7 +1225,7 @@
    "veroeffentlicht": "2026-11-10",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1200,7 +1249,7 @@
    "veroeffentlicht": "2026-11-10",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1224,7 +1273,7 @@
    "veroeffentlicht": "2026-11-09",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1248,7 +1297,7 @@
    "veroeffentlicht": "2026-11-09",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1272,7 +1321,7 @@
    "veroeffentlicht": "2026-11-09",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1297,7 +1346,7 @@
    "veroeffentlicht": "2026-11-06",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1321,7 +1370,7 @@
    "veroeffentlicht": "2026-11-06",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1345,7 +1394,7 @@
    "veroeffentlicht": "2026-11-06",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1393,7 +1442,7 @@
    "veroeffentlicht": "2026-11-05",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1418,7 +1467,7 @@
    "veroeffentlicht": "2026-11-05",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1442,7 +1491,7 @@
    "veroeffentlicht": "2026-11-04",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1467,7 +1516,7 @@
    "veroeffentlicht": "2026-11-03",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1491,56 +1540,7 @@
    "veroeffentlicht": "2026-11-02",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
-   "arbeitgeber_typ": [
-    "unternehmen"
-   ]
-  },
-  {
-   "id": "ba:10001-1003940378-S",
-   "titel": "Consultant SAP Data & Analytics (m/w/d)",
-   "arbeitgeber": "ISR Information Products AG",
-   "ort": "Hamburg",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003940378-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "einstieg",
-   "remote": true,
-   "land": "Deutschland",
-   "regionen": [
-    "Hamburg"
-   ],
-   "arbeitszeit": [
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-10-30",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
-   "arbeitgeber_typ": [
-    "unternehmen"
-   ]
-  },
-  {
-   "id": "ba:12513-0007660724-S",
-   "titel": "Werkstudent Signalverarbeitung & Datenanalyse (m/w/d)",
-   "arbeitgeber": "Korsch AG",
-   "ort": "Berlin",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12513-0007660724-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "werkstudent",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "teilzeit",
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-10-30",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1570,6 +1570,55 @@
    ]
   },
   {
+   "id": "ba:10001-1003940378-S",
+   "titel": "Consultant SAP Data & Analytics (m/w/d)",
+   "arbeitgeber": "ISR Information Products AG",
+   "ort": "Hamburg",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003940378-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "einstieg",
+   "remote": true,
+   "land": "Deutschland",
+   "regionen": [
+    "Hamburg"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-10-30",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-18",
+   "zuletzt_gesehen": "2026-11-24",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
+   "id": "ba:12513-0007660724-S",
+   "titel": "Werkstudent Signalverarbeitung & Datenanalyse (m/w/d)",
+   "arbeitgeber": "Korsch AG",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12513-0007660724-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "werkstudent",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "teilzeit",
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-10-30",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-18",
+   "zuletzt_gesehen": "2026-11-24",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
    "id": "ba:10001-1003932851-S",
    "titel": "Wiss. Mitarbeiter:in zur Promotion „Stadt- und Regionalökonomie“",
    "arbeitgeber": "HafenCity Universität Hamburg",
@@ -1588,7 +1637,7 @@
    "veroeffentlicht": "2026-10-29",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1612,7 +1661,7 @@
    "veroeffentlicht": "2026-10-28",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-24",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
