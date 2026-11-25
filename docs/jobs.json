@@ -1,7 +1,7 @@
 {
  "studiengang": "Applied Social Data Science",
- "aktualisiert": "2026-11-24T16:55+01:00",
- "heute": "2026-11-24",
+ "aktualisiert": "2026-11-25T16:38+01:00",
+ "heute": "2026-11-25",
  "quellen": {
   "Arbeitsagentur": "ok",
   "service.bund.de": "ok",
@@ -11,13 +11,109 @@
  },
  "jobs": [
   {
-   "id": "ba:13348-1657222-1-S",
-   "titel": "Praktikum im Bereich Prozess / Data Analyst und Logistik",
-   "arbeitgeber": "Lufthansa Technik AG",
-   "ort": "Hamburg",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1657222-1-S",
+   "id": "ba:18989-986500086-S",
+   "titel": "Praktikant / Werkstudent Cloud Transformation (w/m/d)",
+   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-986500086-S",
    "quelle": "Arbeitsagentur",
-   "typ": "praktikum",
+   "typ": "werkstudent",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-25",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-25",
+   "zuletzt_gesehen": "2026-11-25",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
+   "id": "ba:18989-986500091-S",
+   "titel": "Praktikant / Werkstudent Cloud Transformation (w/m/d)",
+   "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+   "ort": "Hamburg",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-986500091-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "werkstudent",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Hamburg"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-25",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-25",
+   "zuletzt_gesehen": "2026-11-25",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
+   "id": "ba:12928-PYF1H8K10BUCY8RA-S",
+   "titel": "Supply Chain Analyst (gn) for Tools and Ground Support Equipment",
+   "arbeitgeber": "Experis GmbH",
+   "ort": "Hamburg",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12928-PYF1H8K10BUCY8RA-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "einstieg",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Hamburg"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-25",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-25",
+   "zuletzt_gesehen": "2026-11-25",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
+   "id": "ba:12465-1620279-2-S",
+   "titel": "Werkstudent (w/m/d) Softwareentwicklung",
+   "arbeitgeber": "Siemens AG",
+   "ort": "Berlin",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12465-1620279-2-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "werkstudent",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Berlin"
+   ],
+   "arbeitszeit": [
+    "teilzeit"
+   ],
+   "veroeffentlicht": "2026-11-24",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-25",
+   "zuletzt_gesehen": "2026-11-25",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
+   "id": "ba:13032-AZAUFOHED0XM4R6L-S",
+   "titel": "Supply Chain Logistiker Airbus (m/w/d)",
+   "arbeitgeber": "Argo Aviation GmbH",
+   "ort": "Hamburg",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13032-AZAUFOHED0XM4R6L-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "einstieg",
    "remote": false,
    "land": "Deutschland",
    "regionen": [
@@ -28,8 +124,8 @@
    ],
    "veroeffentlicht": "2026-11-24",
    "frist": null,
-   "zuerst_gesehen": "2026-11-24",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuerst_gesehen": "2026-11-25",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -59,6 +155,30 @@
    ]
   },
   {
+   "id": "ba:13348-1657222-1-S",
+   "titel": "Praktikum im Bereich Prozess / Data Analyst und Logistik",
+   "arbeitgeber": "Lufthansa Technik AG",
+   "ort": "Hamburg",
+   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1657222-1-S",
+   "quelle": "Arbeitsagentur",
+   "typ": "praktikum",
+   "remote": false,
+   "land": "Deutschland",
+   "regionen": [
+    "Hamburg"
+   ],
+   "arbeitszeit": [
+    "vollzeit"
+   ],
+   "veroeffentlicht": "2026-11-24",
+   "frist": null,
+   "zuerst_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
+   "arbeitgeber_typ": [
+    "unternehmen"
+   ]
+  },
+  {
    "id": "ba:10001-1004061101-S",
    "titel": "Trainee IT Consulting w/m/d - Security",
    "arbeitgeber": "Computacenter AG & Co. oHG",
@@ -78,7 +198,7 @@
    "veroeffentlicht": "2026-11-24",
    "frist": null,
    "zuerst_gesehen": "2026-11-24",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -102,7 +222,7 @@
    "veroeffentlicht": "2026-11-23",
    "frist": null,
    "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -150,7 +270,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -174,7 +294,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -198,7 +318,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -222,7 +342,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -246,7 +366,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -270,7 +390,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -294,7 +414,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-23",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -318,7 +438,7 @@
    "veroeffentlicht": "2026-10-30",
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -340,7 +460,7 @@
    "veroeffentlicht": "2026-10-23",
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -362,7 +482,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -386,7 +506,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -410,7 +530,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -434,7 +554,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -456,7 +576,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -478,7 +598,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -502,7 +622,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -526,7 +646,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -548,7 +668,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -572,7 +692,7 @@
    "veroeffentlicht": null,
    "frist": null,
    "zuerst_gesehen": "2026-11-21",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -596,7 +716,7 @@
    "veroeffentlicht": "2026-11-20",
    "frist": null,
    "zuerst_gesehen": "2026-11-20",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -621,32 +741,7 @@
    "veroeffentlicht": "2026-11-20",
    "frist": null,
    "zuerst_gesehen": "2026-11-20",
-   "zuletzt_gesehen": "2026-11-24",
-   "arbeitgeber_typ": [
-    "forschung"
-   ]
-  },
-  {
-   "id": "ba:19209-44581242-1118-S",
-   "titel": "Postdoctoral Researcher in Mechanobiology & Digital Twins",
-   "arbeitgeber": "Helmholtz-Zentrum hereon GmbH",
-   "ort": "Teltow (Brandenburg)",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/19209-44581242-1118-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "phd",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Berlin"
-   ],
-   "arbeitszeit": [
-    "teilzeit",
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-19",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-21",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -670,7 +765,7 @@
    "veroeffentlicht": "2026-11-19",
    "frist": null,
    "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -695,7 +790,7 @@
    "veroeffentlicht": "2026-11-19",
    "frist": null,
    "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -717,7 +812,7 @@
    "veroeffentlicht": "2026-11-17",
    "frist": "2026-12-16",
    "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "oeffentlich"
    ]
@@ -739,7 +834,7 @@
    "veroeffentlicht": "2026-11-12",
    "frist": "2026-11-26",
    "zuerst_gesehen": "2026-11-19",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "oeffentlich"
    ]
@@ -763,7 +858,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -788,7 +883,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung",
     "oeffentlich"
@@ -813,7 +908,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -838,7 +933,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -862,7 +957,7 @@
    "veroeffentlicht": "2026-11-18",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -886,7 +981,7 @@
    "veroeffentlicht": "2026-11-17",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -910,7 +1005,7 @@
    "veroeffentlicht": "2026-11-17",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -934,7 +1029,7 @@
    "veroeffentlicht": "2026-11-16",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -958,59 +1053,9 @@
    "veroeffentlicht": "2026-11-16",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
-   ]
-  },
-  {
-   "id": "ba:10001-1003946281-S",
-   "titel": "– Postdoc – Wissenschaftliche/-r Mitarbeiter/-in (m/w/d) in der Professur für Data Engineering",
-   "arbeitgeber": "Helmut-Schmidt-Universität Universität der Bundeswehr Personaldezernat",
-   "ort": "Hamburg",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003946281-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "phd",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Hamburg"
-   ],
-   "arbeitszeit": [
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-12",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-21",
-   "arbeitgeber_typ": [
-    "forschung",
-    "oeffentlich"
-   ]
-  },
-  {
-   "id": "ba:10001-1003948907-S",
-   "titel": "Wissenschaftliche/-r Mitarbeiter/-in (m/w/d) in der Professur für Hybrid Intelligence",
-   "arbeitgeber": "Helmut-Schmidt-Universität Universität der Bundeswehr Personaldezernat",
-   "ort": "Hamburg",
-   "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003948907-S",
-   "quelle": "Arbeitsagentur",
-   "typ": "phd",
-   "remote": false,
-   "land": "Deutschland",
-   "regionen": [
-    "Hamburg"
-   ],
-   "arbeitszeit": [
-    "vollzeit"
-   ],
-   "veroeffentlicht": "2026-11-12",
-   "frist": null,
-   "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-21",
-   "arbeitgeber_typ": [
-    "forschung",
-    "oeffentlich"
    ]
   },
   {
@@ -1032,7 +1077,7 @@
    "veroeffentlicht": "2026-11-12",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1056,7 +1101,7 @@
    "veroeffentlicht": "2026-11-12",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1080,7 +1125,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1104,7 +1149,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1128,7 +1173,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1152,7 +1197,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1177,7 +1222,7 @@
    "veroeffentlicht": "2026-11-11",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1201,7 +1246,7 @@
    "veroeffentlicht": "2026-11-10",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1225,7 +1270,7 @@
    "veroeffentlicht": "2026-11-10",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1249,7 +1294,7 @@
    "veroeffentlicht": "2026-11-10",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1273,7 +1318,7 @@
    "veroeffentlicht": "2026-11-09",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1297,7 +1342,7 @@
    "veroeffentlicht": "2026-11-09",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1321,7 +1366,7 @@
    "veroeffentlicht": "2026-11-09",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1346,7 +1391,7 @@
    "veroeffentlicht": "2026-11-06",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1370,7 +1415,7 @@
    "veroeffentlicht": "2026-11-06",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1394,14 +1439,14 @@
    "veroeffentlicht": "2026-11-06",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
   },
   {
    "id": "ba:20965-2371020-S",
-   "titel": "Werkstudent*in Hydrologie (m/w/d)",
+   "titel": "Werkstudent*in Datenanalyse & Programmierung im Umweltbereich (m/w/d)",
    "arbeitgeber": "Hamburg Port Authority AÖR",
    "ort": "Hamburg",
    "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20965-2371020-S",
@@ -1418,7 +1463,7 @@
    "veroeffentlicht": "2026-11-05",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-23",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1442,7 +1487,7 @@
    "veroeffentlicht": "2026-11-05",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1467,7 +1512,7 @@
    "veroeffentlicht": "2026-11-05",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1491,7 +1536,7 @@
    "veroeffentlicht": "2026-11-04",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1540,7 +1585,7 @@
    "veroeffentlicht": "2026-11-02",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1588,7 +1633,7 @@
    "veroeffentlicht": "2026-10-30",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1613,7 +1658,7 @@
    "veroeffentlicht": "2026-10-30",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]
@@ -1637,7 +1682,7 @@
    "veroeffentlicht": "2026-10-29",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "forschung"
    ]
@@ -1661,7 +1706,7 @@
    "veroeffentlicht": "2026-10-28",
    "frist": null,
    "zuerst_gesehen": "2026-11-18",
-   "zuletzt_gesehen": "2026-11-24",
+   "zuletzt_gesehen": "2026-11-25",
    "arbeitgeber_typ": [
     "unternehmen"
    ]

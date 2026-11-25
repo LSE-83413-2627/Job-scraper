@@ -1,80 +1,5 @@
 [
  {
-  "id": "ba:19209-44581242-1118-S",
-  "titel": "Postdoctoral Researcher in Mechanobiology & Digital Twins",
-  "arbeitgeber": "Helmholtz-Zentrum hereon GmbH",
-  "ort": "Teltow (Brandenburg)",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/19209-44581242-1118-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "teilzeit",
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-19",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-19",
-  "zuletzt_gesehen": "2026-11-21",
-  "arbeitgeber_typ": [
-   "forschung"
-  ]
- },
- {
-  "id": "ba:10001-1003946281-S",
-  "titel": "– Postdoc – Wissenschaftliche/-r Mitarbeiter/-in (m/w/d) in der Professur für Data Engineering",
-  "arbeitgeber": "Helmut-Schmidt-Universität Universität der Bundeswehr Personaldezernat",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003946281-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-12",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-21",
-  "arbeitgeber_typ": [
-   "forschung",
-   "oeffentlich"
-  ]
- },
- {
-  "id": "ba:10001-1003948907-S",
-  "titel": "Wissenschaftliche/-r Mitarbeiter/-in (m/w/d) in der Professur für Hybrid Intelligence",
-  "arbeitgeber": "Helmut-Schmidt-Universität Universität der Bundeswehr Personaldezernat",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003948907-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-12",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-21",
-  "arbeitgeber_typ": [
-   "forschung",
-   "oeffentlich"
-  ]
- },
- {
   "id": "ba:10001-1003913492-S",
   "titel": "41/2026 - Student Assistent (f/m/d)",
   "arbeitgeber": "Museum für Naturkunde",
@@ -118,30 +43,6 @@
   "frist": null,
   "zuerst_gesehen": "2026-11-18",
   "zuletzt_gesehen": "2026-11-22",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:20965-2371020-S",
-  "titel": "Werkstudent*in Hydrologie (m/w/d)",
-  "arbeitgeber": "Hamburg Port Authority AÖR",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20965-2371020-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "werkstudent",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "teilzeit"
-  ],
-  "veroeffentlicht": "2026-11-05",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-23",
   "arbeitgeber_typ": [
    "unternehmen"
   ]
@@ -219,972 +120,6 @@
   ]
  },
  {
-  "id": "ba:18989-984542724-S",
-  "titel": "Praktikum Data Analytics Global Transformation Tax (w/m/d)",
-  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984542724-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-18",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-23",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:18989-984547821-S",
-  "titel": "Praktikum energiewirtschaftliche Prüfung und Beratung (w/m/d)",
-  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984547821-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-18",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-23",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:13348-1657222-1-S",
-  "titel": "Praktikum im Bereich Prozess / Data Analyst und Logistik",
-  "arbeitgeber": "Lufthansa Technik AG",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1657222-1-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-24",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-24",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:18989-984542892-S",
-  "titel": "Praktikum Data Analytics Global Transformation Tax (w/m/d)",
-  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984542892-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-18",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-23",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:13334-00005f6724e001-S",
-  "titel": "Werkstudent:in Data & Analytics (m/w/d)",
-  "arbeitgeber": "EDEKA IT Stiftung & Co. OHG",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13334-00005f6724e001-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "werkstudent",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "teilzeit"
-  ],
-  "veroeffentlicht": "2026-11-16",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:10001-1003925631-S",
-  "titel": "(Junior) Data Analyst mit Schwerpunkt militärische Luftfahrzeuge (m/w/d)",
-  "arbeitgeber": "IABG Industrieanlagen Betriebs-GmbH",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003925631-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "einstieg",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-10-28",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:12288-4996082313-S",
-  "titel": "Doktorand Predictive Analytics als Analyst / Consultant (w|m|d) | findic",
-  "arbeitgeber": "findic",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996082313-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-12",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "forschung"
-  ]
- },
- {
-  "id": "ba:12122-984823891-S",
-  "titel": "Datenassistent (m/w/d)",
-  "arbeitgeber": "persona service AG & Co.KG Niederlassung Chemnitz-Nord",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12122-984823891-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "einstieg",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-19",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-19",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:12288-4996073275-S",
-  "titel": "Doktorand Graph Intelligence & Agentic Graph RAG als Analyst / Consultant (w|m|d) | findic",
-  "arbeitgeber": "findic",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996073275-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-12",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "forschung"
-  ]
- },
- {
-  "id": "ba:10001-1003999289-S",
-  "titel": "1 Doktorand*in (m/w/d)",
-  "arbeitgeber": "Deutsches Institut für Ernährungsforschung Stiftung des öffentl.Rechts",
-  "ort": "Nuthetal (Brandenburg)",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003999289-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-11",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "forschung"
-  ]
- },
- {
-  "id": "ba:10001-1004031064-S",
-  "titel": "Wissenschaftliche*r Mitarbeiter*in (w/m/div)",
-  "arbeitgeber": "Deutsches Institut für Wirtschaftsforschung e.V.",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004031064-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "teilzeit"
-  ],
-  "veroeffentlicht": "2026-11-18",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "forschung"
-  ]
- },
- {
-  "id": "ba:20536-a08kfz1iqv-S",
-  "titel": "Research Associate (m/f/d) at the Institute of Medical Technol...",
-  "arbeitgeber": "Technische Universität Hamburg",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20536-a08kfz1iqv-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-10-30",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-21",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "forschung"
-  ]
- },
- {
-  "id": "ba:10001-1003932851-S",
-  "titel": "Wiss. Mitarbeiter:in zur Promotion „Stadt- und Regionalökonomie“",
-  "arbeitgeber": "HafenCity Universität Hamburg",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003932851-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "teilzeit"
-  ],
-  "veroeffentlicht": "2026-10-29",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "forschung"
-  ]
- },
- {
-  "id": "ba:18989-984548682-S",
-  "titel": "Praktikum Forensic - Data Analytics (w/m/d)",
-  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548682-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-18",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-23",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:18989-984548703-S",
-  "titel": "Praktikum - Digital Forensic und eDiscovery (w/m/d)",
-  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548703-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-18",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-23",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:12462-1649681-1-S",
-  "titel": "Praktikant Projektmanagement bei BMW Motorrad (w/m/x)",
-  "arbeitgeber": "BMW AG",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12462-1649681-1-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-11",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:13348-1656246-1-S",
-  "titel": "Internship Digitization & Process Optimization",
-  "arbeitgeber": "Lufthansa Technik AG",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1656246-1-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-20",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-20",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:13348-1651695-1-S",
-  "titel": "Internship Operational Excellence & Business Intelligence (BI & AI)",
-  "arbeitgeber": "Lufthansa Technik AG",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1651695-1-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-09",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:13348-1651694-1-S",
-  "titel": "Praktikum im Bereich Operational Excellence & Business Intelligence (BI & AI)",
-  "arbeitgeber": "Lufthansa Technik AG",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1651694-1-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-09",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:15794-471863_50541-1-S",
-  "titel": "Trainee Cloud & Data - Dein Einstieg in Artificial Intelligence & Data (m/w/d)",
-  "arbeitgeber": "Deloitte GmbH",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15794-471863_50541-1-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "trainee",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-11",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:15794-471862_50565-1-S",
-  "titel": "Trainee Cloud & Data - Dein Einstieg in AI Insights & Intelligent Automation (m/w/d)",
-  "arbeitgeber": "Deloitte GmbH",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15794-471862_50565-1-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "trainee",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-17",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:17031-00024402b7a001-S",
-  "titel": "Doctoral Researcher (f_m_x) - Forest Carbon Attribution from Earth Observation and Atmospheric Const",
-  "arbeitgeber": "GFZ Helmholtz-Zentrum für Geoforschung",
-  "ort": "Potsdam (Brandenburg)",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/17031-00024402b7a001-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "teilzeit"
-  ],
-  "veroeffentlicht": "2026-11-05",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "forschung"
-  ]
- },
- {
-  "id": "ba:10001-1003940378-S",
-  "titel": "Consultant SAP Data & Analytics (m/w/d)",
-  "arbeitgeber": "ISR Information Products AG",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003940378-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "einstieg",
-  "remote": true,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-10-30",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:10001-1003964383-S",
-  "titel": "Public Cloud Engineer (m/w/d) Generative AI befristet bis 31.01.2028",
-  "arbeitgeber": "SIGNAL IDUNA Krankenversicherung a. G.",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003964383-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "einstieg",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-10",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:10001-1003964360-S",
-  "titel": "Public Cloud Engineer (m/w/d) Schwerpunkt Generative AI",
-  "arbeitgeber": "SIGNAL IDUNA Krankenversicherung a. G.",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003964360-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "einstieg",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-10",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:10001-1003990884-S",
-  "titel": "Studentische:r Mitarbeiter:in (m/w/d) - Bereich Transfer und Dialog",
-  "arbeitgeber": "Weizenbaum-Institut e. V.",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003990884-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "werkstudent",
-  "remote": true,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "teilzeit"
-  ],
-  "veroeffentlicht": "2026-11-10",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "forschung"
-  ]
- },
- {
-  "id": "ba:16729-2026-725-S",
-  "titel": "Wissenschaftliche/r Mitarbeitende/r (m/w/d)",
-  "arbeitgeber": "Bundespolizeipräsidium",
-  "ort": "Potsdam (Brandenburg)",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/16729-2026-725-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "teilzeit",
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-18",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "forschung",
-   "oeffentlich"
-  ]
- },
- {
-  "id": "ba:20536-feya4nhfug-S",
-  "titel": "Wissenschaftliche*r Mitarbeiter*in für das Institut Verkehrspl...",
-  "arbeitgeber": "Technische Universität Hamburg",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20536-feya4nhfug-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "phd",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-16",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "forschung"
-  ]
- },
- {
-  "id": "ba:12456-1598208-3-S",
-  "titel": "Referent:in strategische Beschaffung",
-  "arbeitgeber": "Deutsche Bahn AG",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12456-1598208-3-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "einstieg",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "teilzeit",
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-19",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-19",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:12513-0007660724-S",
-  "titel": "Werkstudent Signalverarbeitung & Datenanalyse (m/w/d)",
-  "arbeitgeber": "Korsch AG",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12513-0007660724-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "werkstudent",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "teilzeit",
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-10-30",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:20279-k62365.1111-S",
-  "titel": "Werkstudent*in mobiles Sensorsystem (m/w/d)",
-  "arbeitgeber": "ENQT GmbH",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20279-k62365.1111-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "werkstudent",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "teilzeit"
-  ],
-  "veroeffentlicht": "2026-11-09",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:10001-1003976655-S",
-  "titel": "Werkstudent:in / Praktikant:in (d/w/m) Digitalisierung - Arbeitsicherheit",
-  "arbeitgeber": "Unilever D Holding GmbH",
-  "ort": "Buxtehude (Niedersachsen)",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003976655-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "werkstudent",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "teilzeit",
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-06",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:10001-1003964713-S",
-  "titel": "Werkstudent (m/w/d) IT / Business Infrastructure – ERP, PIM, DMS & CLM",
-  "arbeitgeber": "BIGFOOD Produktions GmbH",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003964713-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "werkstudent",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "teilzeit"
-  ],
-  "veroeffentlicht": "2026-11-04",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:13509-000021116b4001-S",
-  "titel": "Praktikant Cognitive Science & Decision Intelligence (m/w/d)",
-  "arbeitgeber": "BWI GmbH",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13509-000021116b4001-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-02",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:13348-1657028-1-S",
-  "titel": "Praktikum im Bereich Airline-Logistik bei der Lufthansa Group",
-  "arbeitgeber": "Lufthansa Technik AG",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1657028-1-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-23",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-23",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:13348-1651478-1-S",
-  "titel": "Praktikum im Bereich Product Engineering Power Generation",
-  "arbeitgeber": "Lufthansa Technik AG",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1651478-1-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-06",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:13348-1651693-1-S",
-  "titel": "Praktikum Operational Excellence & Business Intelligence",
-  "arbeitgeber": "Lufthansa Technik AG",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1651693-1-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-06",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:13151-1648451-1-S",
-  "titel": "Praktikant*in Unterstützung Betriebsingenieurinnen Achskomponenten und Vorderachse",
-  "arbeitgeber": "Mercedes-Benz Group AG",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13151-1648451-1-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "praktikum",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-11",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:18989-984548745-S",
-  "titel": "Technology Consultant - Financial Services (w/m/d)",
-  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548745-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "einstieg",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-18",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-23",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:10001-1003998273-S",
-  "titel": "Datenanalystinnen/Datenanalysten (m/w/d)",
-  "arbeitgeber": "BG BAU BG der Bauwirtschaft",
-  "ort": "Berlin",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003998273-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "einstieg",
-  "remote": true,
-  "land": "Deutschland",
-  "regionen": [
-   "Berlin"
-  ],
-  "arbeitszeit": [
-   "teilzeit",
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-11",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
   "id": "ba:10001-1003950433-S",
   "titel": "Referentin/Referent Data Scientist (m/w/d)",
   "arbeitgeber": "BG BAU BG der Bauwirtschaft",
@@ -1204,30 +139,6 @@
   "veroeffentlicht": "2026-11-03",
   "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
-  "arbeitgeber_typ": [
-   "unternehmen"
-  ]
- },
- {
-  "id": "ba:18989-984548766-S",
-  "titel": "Technology Consultant - Financial Services (w/m/d)",
-  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
-  "ort": "Hamburg",
-  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548766-S",
-  "quelle": "Arbeitsagentur",
-  "typ": "einstieg",
-  "remote": false,
-  "land": "Deutschland",
-  "regionen": [
-   "Hamburg"
-  ],
-  "arbeitszeit": [
-   "vollzeit"
-  ],
-  "veroeffentlicht": "2026-11-18",
-  "frist": null,
-  "zuerst_gesehen": "2026-11-23",
   "zuletzt_gesehen": "2026-11-24",
   "arbeitgeber_typ": [
    "unternehmen"
@@ -1258,6 +169,1140 @@
   ]
  },
  {
+  "id": "ba:18989-984542724-S",
+  "titel": "Praktikum Data Analytics Global Transformation Tax (w/m/d)",
+  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984542724-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-18",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-23",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:18989-984547821-S",
+  "titel": "Praktikum energiewirtschaftliche Prüfung und Beratung (w/m/d)",
+  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984547821-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-18",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-23",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:13348-1657222-1-S",
+  "titel": "Praktikum im Bereich Prozess / Data Analyst und Logistik",
+  "arbeitgeber": "Lufthansa Technik AG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1657222-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-24",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:18989-984542892-S",
+  "titel": "Praktikum Data Analytics Global Transformation Tax (w/m/d)",
+  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984542892-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-18",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-23",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:13334-00005f6724e001-S",
+  "titel": "Werkstudent:in Data & Analytics (m/w/d)",
+  "arbeitgeber": "EDEKA IT Stiftung & Co. OHG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13334-00005f6724e001-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "werkstudent",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "teilzeit"
+  ],
+  "veroeffentlicht": "2026-11-16",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:10001-1003925631-S",
+  "titel": "(Junior) Data Analyst mit Schwerpunkt militärische Luftfahrzeuge (m/w/d)",
+  "arbeitgeber": "IABG Industrieanlagen Betriebs-GmbH",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003925631-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-10-28",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:12288-4996082313-S",
+  "titel": "Doktorand Predictive Analytics als Analyst / Consultant (w|m|d) | findic",
+  "arbeitgeber": "findic",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996082313-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-12",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
+ },
+ {
+  "id": "ba:12122-984823891-S",
+  "titel": "Datenassistent (m/w/d)",
+  "arbeitgeber": "persona service AG & Co.KG Niederlassung Chemnitz-Nord",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12122-984823891-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-19",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-19",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:12288-4996073275-S",
+  "titel": "Doktorand Graph Intelligence & Agentic Graph RAG als Analyst / Consultant (w|m|d) | findic",
+  "arbeitgeber": "findic",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12288-4996073275-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-12",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
+ },
+ {
+  "id": "ba:10001-1003999289-S",
+  "titel": "1 Doktorand*in (m/w/d)",
+  "arbeitgeber": "Deutsches Institut für Ernährungsforschung Stiftung des öffentl.Rechts",
+  "ort": "Nuthetal (Brandenburg)",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003999289-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-11",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
+ },
+ {
+  "id": "ba:10001-1004031064-S",
+  "titel": "Wissenschaftliche*r Mitarbeiter*in (w/m/div)",
+  "arbeitgeber": "Deutsches Institut für Wirtschaftsforschung e.V.",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1004031064-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit"
+  ],
+  "veroeffentlicht": "2026-11-18",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
+ },
+ {
+  "id": "ba:20536-a08kfz1iqv-S",
+  "titel": "Research Associate (m/f/d) at the Institute of Medical Technol...",
+  "arbeitgeber": "Technische Universität Hamburg",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20536-a08kfz1iqv-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-10-30",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-21",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
+ },
+ {
+  "id": "ba:10001-1003932851-S",
+  "titel": "Wiss. Mitarbeiter:in zur Promotion „Stadt- und Regionalökonomie“",
+  "arbeitgeber": "HafenCity Universität Hamburg",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003932851-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "teilzeit"
+  ],
+  "veroeffentlicht": "2026-10-29",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
+ },
+ {
+  "id": "ba:20965-2371020-S",
+  "titel": "Werkstudent*in Datenanalyse & Programmierung im Umweltbereich (m/w/d)",
+  "arbeitgeber": "Hamburg Port Authority AÖR",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20965-2371020-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "werkstudent",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "teilzeit"
+  ],
+  "veroeffentlicht": "2026-11-05",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:18989-984548682-S",
+  "titel": "Praktikum Forensic - Data Analytics (w/m/d)",
+  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548682-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-18",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-23",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:18989-986500086-S",
+  "titel": "Praktikant / Werkstudent Cloud Transformation (w/m/d)",
+  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-986500086-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "werkstudent",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-25",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-25",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:18989-984548703-S",
+  "titel": "Praktikum - Digital Forensic und eDiscovery (w/m/d)",
+  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548703-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-18",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-23",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:12462-1649681-1-S",
+  "titel": "Praktikant Projektmanagement bei BMW Motorrad (w/m/x)",
+  "arbeitgeber": "BMW AG",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12462-1649681-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-11",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:18989-986500091-S",
+  "titel": "Praktikant / Werkstudent Cloud Transformation (w/m/d)",
+  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-986500091-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "werkstudent",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-25",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-25",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:13348-1656246-1-S",
+  "titel": "Internship Digitization & Process Optimization",
+  "arbeitgeber": "Lufthansa Technik AG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1656246-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-20",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-20",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:13348-1651695-1-S",
+  "titel": "Internship Operational Excellence & Business Intelligence (BI & AI)",
+  "arbeitgeber": "Lufthansa Technik AG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1651695-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-09",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:13348-1651694-1-S",
+  "titel": "Praktikum im Bereich Operational Excellence & Business Intelligence (BI & AI)",
+  "arbeitgeber": "Lufthansa Technik AG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1651694-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-09",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:15794-471863_50541-1-S",
+  "titel": "Trainee Cloud & Data - Dein Einstieg in Artificial Intelligence & Data (m/w/d)",
+  "arbeitgeber": "Deloitte GmbH",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15794-471863_50541-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "trainee",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-11",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:15794-471862_50565-1-S",
+  "titel": "Trainee Cloud & Data - Dein Einstieg in AI Insights & Intelligent Automation (m/w/d)",
+  "arbeitgeber": "Deloitte GmbH",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/15794-471862_50565-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "trainee",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-17",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:17031-00024402b7a001-S",
+  "titel": "Doctoral Researcher (f_m_x) - Forest Carbon Attribution from Earth Observation and Atmospheric Const",
+  "arbeitgeber": "GFZ Helmholtz-Zentrum für Geoforschung",
+  "ort": "Potsdam (Brandenburg)",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/17031-00024402b7a001-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit"
+  ],
+  "veroeffentlicht": "2026-11-05",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
+ },
+ {
+  "id": "ba:10001-1003940378-S",
+  "titel": "Consultant SAP Data & Analytics (m/w/d)",
+  "arbeitgeber": "ISR Information Products AG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003940378-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": true,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-10-30",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:10001-1003964383-S",
+  "titel": "Public Cloud Engineer (m/w/d) Generative AI befristet bis 31.01.2028",
+  "arbeitgeber": "SIGNAL IDUNA Krankenversicherung a. G.",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003964383-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-10",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:10001-1003964360-S",
+  "titel": "Public Cloud Engineer (m/w/d) Schwerpunkt Generative AI",
+  "arbeitgeber": "SIGNAL IDUNA Krankenversicherung a. G.",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003964360-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-10",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:10001-1003990884-S",
+  "titel": "Studentische:r Mitarbeiter:in (m/w/d) - Bereich Transfer und Dialog",
+  "arbeitgeber": "Weizenbaum-Institut e. V.",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003990884-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "werkstudent",
+  "remote": true,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit"
+  ],
+  "veroeffentlicht": "2026-11-10",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
+ },
+ {
+  "id": "ba:16729-2026-725-S",
+  "titel": "Wissenschaftliche/r Mitarbeitende/r (m/w/d)",
+  "arbeitgeber": "Bundespolizeipräsidium",
+  "ort": "Potsdam (Brandenburg)",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/16729-2026-725-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit",
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-18",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "forschung",
+   "oeffentlich"
+  ]
+ },
+ {
+  "id": "ba:20536-feya4nhfug-S",
+  "titel": "Wissenschaftliche*r Mitarbeiter*in für das Institut Verkehrspl...",
+  "arbeitgeber": "Technische Universität Hamburg",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20536-feya4nhfug-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "phd",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-16",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "forschung"
+  ]
+ },
+ {
+  "id": "ba:12456-1598208-3-S",
+  "titel": "Referent:in strategische Beschaffung",
+  "arbeitgeber": "Deutsche Bahn AG",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12456-1598208-3-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit",
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-19",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-19",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:12513-0007660724-S",
+  "titel": "Werkstudent Signalverarbeitung & Datenanalyse (m/w/d)",
+  "arbeitgeber": "Korsch AG",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12513-0007660724-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "werkstudent",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit",
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-10-30",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:20279-k62365.1111-S",
+  "titel": "Werkstudent*in mobiles Sensorsystem (m/w/d)",
+  "arbeitgeber": "ENQT GmbH",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/20279-k62365.1111-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "werkstudent",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "teilzeit"
+  ],
+  "veroeffentlicht": "2026-11-09",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:10001-1003976655-S",
+  "titel": "Werkstudent:in / Praktikant:in (d/w/m) Digitalisierung - Arbeitsicherheit",
+  "arbeitgeber": "Unilever D Holding GmbH",
+  "ort": "Buxtehude (Niedersachsen)",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003976655-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "werkstudent",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "teilzeit",
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-06",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:10001-1003964713-S",
+  "titel": "Werkstudent (m/w/d) IT / Business Infrastructure – ERP, PIM, DMS & CLM",
+  "arbeitgeber": "BIGFOOD Produktions GmbH",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003964713-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "werkstudent",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "teilzeit"
+  ],
+  "veroeffentlicht": "2026-11-04",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:13509-000021116b4001-S",
+  "titel": "Praktikant Cognitive Science & Decision Intelligence (m/w/d)",
+  "arbeitgeber": "BWI GmbH",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13509-000021116b4001-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-02",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:12465-1620279-2-S",
+  "titel": "Werkstudent (w/m/d) Softwareentwicklung",
+  "arbeitgeber": "Siemens AG",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12465-1620279-2-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "werkstudent",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit"
+  ],
+  "veroeffentlicht": "2026-11-24",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-25",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:13348-1657028-1-S",
+  "titel": "Praktikum im Bereich Airline-Logistik bei der Lufthansa Group",
+  "arbeitgeber": "Lufthansa Technik AG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1657028-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-23",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-23",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:13348-1651478-1-S",
+  "titel": "Praktikum im Bereich Product Engineering Power Generation",
+  "arbeitgeber": "Lufthansa Technik AG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1651478-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-06",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:13348-1651693-1-S",
+  "titel": "Praktikum Operational Excellence & Business Intelligence",
+  "arbeitgeber": "Lufthansa Technik AG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13348-1651693-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-06",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:13151-1648451-1-S",
+  "titel": "Praktikant*in Unterstützung Betriebsingenieurinnen Achskomponenten und Vorderachse",
+  "arbeitgeber": "Mercedes-Benz Group AG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13151-1648451-1-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "praktikum",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-11",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:18989-984548745-S",
+  "titel": "Technology Consultant - Financial Services (w/m/d)",
+  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548745-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-18",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-23",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:10001-1003998273-S",
+  "titel": "Datenanalystinnen/Datenanalysten (m/w/d)",
+  "arbeitgeber": "BG BAU BG der Bauwirtschaft",
+  "ort": "Berlin",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003998273-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": true,
+  "land": "Deutschland",
+  "regionen": [
+   "Berlin"
+  ],
+  "arbeitszeit": [
+   "teilzeit",
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-11",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-18",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:18989-984548766-S",
+  "titel": "Technology Consultant - Financial Services (w/m/d)",
+  "arbeitgeber": "PricewaterhouseCoopers GmbH WPG",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/18989-984548766-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-18",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-23",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:12928-PYF1H8K10BUCY8RA-S",
+  "titel": "Supply Chain Analyst (gn) for Tools and Ground Support Equipment",
+  "arbeitgeber": "Experis GmbH",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/12928-PYF1H8K10BUCY8RA-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-25",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-25",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
+  "id": "ba:13032-AZAUFOHED0XM4R6L-S",
+  "titel": "Supply Chain Logistiker Airbus (m/w/d)",
+  "arbeitgeber": "Argo Aviation GmbH",
+  "ort": "Hamburg",
+  "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/13032-AZAUFOHED0XM4R6L-S",
+  "quelle": "Arbeitsagentur",
+  "typ": "einstieg",
+  "remote": false,
+  "land": "Deutschland",
+  "regionen": [
+   "Hamburg"
+  ],
+  "arbeitszeit": [
+   "vollzeit"
+  ],
+  "veroeffentlicht": "2026-11-24",
+  "frist": null,
+  "zuerst_gesehen": "2026-11-25",
+  "zuletzt_gesehen": "2026-11-25",
+  "arbeitgeber_typ": [
+   "unternehmen"
+  ]
+ },
+ {
   "id": "ba:19315-1655895-1-S",
   "titel": "Wissenschaftliche*r Mitarbeiter*in im Bereich Bodenkunde (w/m/d)",
   "arbeitgeber": "Johann Heinrich von Thünen-Institut",
@@ -1277,7 +1322,7 @@
   "veroeffentlicht": "2026-11-20",
   "frist": null,
   "zuerst_gesehen": "2026-11-20",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "forschung"
   ]
@@ -1302,7 +1347,7 @@
   "veroeffentlicht": "2026-11-24",
   "frist": null,
   "zuerst_gesehen": "2026-11-24",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "unternehmen"
   ]
@@ -1326,7 +1371,7 @@
   "veroeffentlicht": "2026-11-18",
   "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "unternehmen"
   ]
@@ -1351,7 +1396,7 @@
   "veroeffentlicht": "2026-11-05",
   "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "unternehmen"
   ]
@@ -1376,7 +1421,7 @@
   "veroeffentlicht": "2026-11-18",
   "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "unternehmen"
   ]
@@ -1400,7 +1445,7 @@
   "veroeffentlicht": "2026-11-18",
   "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "unternehmen"
   ]
@@ -1424,7 +1469,7 @@
   "veroeffentlicht": "2026-11-17",
   "frist": null,
   "zuerst_gesehen": "2026-11-18",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "unternehmen"
   ]
@@ -1446,7 +1491,7 @@
   "veroeffentlicht": "2026-11-17",
   "frist": "2026-12-16",
   "zuerst_gesehen": "2026-11-19",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "oeffentlich"
   ]
@@ -1468,7 +1513,7 @@
   "veroeffentlicht": "2026-11-12",
   "frist": "2026-11-26",
   "zuerst_gesehen": "2026-11-19",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "oeffentlich"
   ]
@@ -1490,7 +1535,7 @@
   "veroeffentlicht": null,
   "frist": null,
   "zuerst_gesehen": "2026-11-21",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "forschung"
   ]
@@ -1514,7 +1559,7 @@
   "veroeffentlicht": null,
   "frist": null,
   "zuerst_gesehen": "2026-11-21",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "forschung"
   ]
@@ -1538,7 +1583,7 @@
   "veroeffentlicht": null,
   "frist": null,
   "zuerst_gesehen": "2026-11-21",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "forschung"
   ]
@@ -1562,7 +1607,7 @@
   "veroeffentlicht": null,
   "frist": null,
   "zuerst_gesehen": "2026-11-21",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "forschung"
   ]
@@ -1584,7 +1629,7 @@
   "veroeffentlicht": null,
   "frist": null,
   "zuerst_gesehen": "2026-11-21",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "forschung"
   ]
@@ -1606,7 +1651,7 @@
   "veroeffentlicht": null,
   "frist": null,
   "zuerst_gesehen": "2026-11-21",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "forschung"
   ]
@@ -1630,7 +1675,7 @@
   "veroeffentlicht": null,
   "frist": null,
   "zuerst_gesehen": "2026-11-21",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "forschung"
   ]
@@ -1654,7 +1699,7 @@
   "veroeffentlicht": null,
   "frist": null,
   "zuerst_gesehen": "2026-11-21",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "forschung"
   ]
@@ -1676,7 +1721,7 @@
   "veroeffentlicht": null,
   "frist": null,
   "zuerst_gesehen": "2026-11-21",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "forschung"
   ]
@@ -1698,7 +1743,7 @@
   "veroeffentlicht": "2026-10-23",
   "frist": null,
   "zuerst_gesehen": "2026-11-21",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "forschung"
   ]
@@ -1722,7 +1767,7 @@
   "veroeffentlicht": null,
   "frist": null,
   "zuerst_gesehen": "2026-11-21",
-  "zuletzt_gesehen": "2026-11-24",
+  "zuletzt_gesehen": "2026-11-25",
   "arbeitgeber_typ": [
    "forschung"
   ]
